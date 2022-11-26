@@ -5,19 +5,11 @@
 
 .containerSobre{
    width: 100vw;
-   height: 950px;
+   height: 100vh;
    display: flex;
    
 }
-
-.about {
-  
-    display: flex;
-    flex-direction: column;
-    margin-top: 23rem;
-    height: 500px;
-   
-}
+ 
 
 #pink{
     color: #D9298A
@@ -127,18 +119,11 @@ a {
 .imgAbout{
     display:none;
 }
-.about {
-  
-    display: flex;
-    flex-direction: column;
-    margin-top: 55rem;
-    height: 500px;
-   
-}
+ 
 
 #btnTxt{
     display: block;
-  
+    margin: 2rem 0;
     width: 30%;
     height: 10%;
     background: #D9298A;
@@ -147,7 +132,26 @@ a {
     font-size: 1.5rem;
     box-shadow: 0 0px 15px pink;
     cursor: pointer;
+ 
    
 }
 
+.txtAbout h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.txtAbout p {
+    font-size: 2rem;
+}
+
+.bannerMobileSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerMobileSobre img {
+    object-fit: contain;
+}
 }

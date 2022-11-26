@@ -15,7 +15,7 @@ function SobreCarv() {
   return (
     <section className={styles.containerSobre}>
 
-      <div className={styles.about}>
+ 
 
         <div className={styles.txtAbout}>
 
@@ -33,9 +33,13 @@ function SobreCarv() {
             SAIBA MAIS
             </Link>
             </button>
+            <div className={styles.bannerMobileSobre}>
+            <img src={ImagemLateral} alt="imagem" height="550px" width="400px" />
+            </div>
+            
         </div>
 
-      </div>
+  
       <div className={styles.imgAbout}>
         <div className="imgLateral">
           <img src={ImagemLateral} alt="imagem" height="550px" width="400px" />

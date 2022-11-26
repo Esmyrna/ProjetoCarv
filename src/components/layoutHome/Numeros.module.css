@@ -1,8 +1,9 @@
  @font-face {
-    font-family: Manrope-bold;
-    src: url(../../FontesCarv/Manrope/Manrope-Bold.ttf);
+   font-family: Manrope-bold;
+   src: url(../../FontesCarv/Manrope/Manrope-Bold.ttf);
  }
- 
+
+ /*
  .containerNumero {
     width: 100%;
     min-height: 500px;
@@ -73,3 +74,67 @@
     font-size: 32px;
     font-family: 'Manrope-Bold';
   }
+
+  */
+
+ @media (min-width: 393px) and (max-width: 780px) {
+
+   .containerNumero {
+     width: 100%;
+     height: 3%;
+ 
+     margin-top: 50%;
+
+   }
+
+   .numbers {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content:space-around;
+     align-content: center;
+   }
+
+   .sobre {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: white;
+     padding: 2rem 0;
+     z-index: 2;
+     font-size: 2.5rem;
+     font-family: 'Manrope-Bold';
+
+
+   }
+
+   #pink {
+     color: #D9298A;
+   }
+
+ 
+    .frase1 {
+    color: #fff;
+    
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Manrope-Bold';
+    text-align: center;
+  }
+
+
+    .frase2 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Manrope-Bold';
+    text-align: center;
+  }
+
+  .frase3 {
+    color: #fff;
+  
+    font-size: 1.8rem;
+    font-family: 'Manrope-Bold';
+    text-align: center;
+  }
+ }
