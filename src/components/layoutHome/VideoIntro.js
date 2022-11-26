@@ -24,12 +24,11 @@ function VideoIntro() {
  
     return(
 
-        <section className={styles.containerVideo}>
+      <div className={styles.containerVideo}>
         <video autoPlay muted loop id={styles.videoCarvalheira} className={styles.videoBody}>
            <source src={videoCarvalheira} type="video/mp4" />
         </video>
-
-        <div id={styles.wrapperVideo}>
+         <div id={styles.wrapperVideo}>
            <div id={styles.containerIconsVideo}>
               <div class={styles.instagramIcon} id={styles.iconV}  onClick={link}>
                 <BsInstagram  onClick={link} />
@@ -55,7 +54,9 @@ function VideoIntro() {
               <button id={styles.ingressoBtnVideo} >INGRESSOS</button>
            </div>
         </div>
-     </section>
+        
+        
+     </div>
     )
 }
 
