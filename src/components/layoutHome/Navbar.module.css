@@ -20,7 +20,7 @@
 nav{
     background-color: black;
     height: 80px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,10 +101,11 @@ label  {
  .input {
     display: none;
 }
-@media(max-width: 952px){
+@media(max-width:770px ){
     .list ul{
         display: flex;
         flex-direction: row;
+        background-color: red;
          
     }
     
