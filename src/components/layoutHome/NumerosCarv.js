@@ -9,16 +9,15 @@ function NumerosCarv(){
 
                   <div className={styles.numbers}>
                      <div clasasName={styles.num1}>
-                        <h1 id={styles.purple}>100</h1>
-                        <p className={styles.frase1}>Eventos desde 2004</p>
+                        <p className={styles.frase1}> <h1 id={styles.purple}>100 </h1> <br></br>Eventos desde 2004</p>
                      </div>
                      <div className={styles.frase2}>
-                        <h1 id={styles.purple}>400<span id={styles.white}>K</span></h1>
-                        <p>De pessoas na plateia</p>
+                     <p className={styles.frase2}> <h1 id={styles.purple}>400K </h1> <br></br>De pessoas na plateia</p>
                      </div>
                      <div className={styles.frase3}>
-                        <h1 id={styles.purple}>200</h1>
-                        <p>Marcas envolvidas</p>
+                     <p className={styles.frase3}> <h1 id={styles.purple}>200 </h1> <br></br>Marcas envolvidas</p>
+                     
+                        
                      </div>
                   </div>
 

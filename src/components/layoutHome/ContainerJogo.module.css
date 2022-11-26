@@ -8,14 +8,16 @@
 @media (min-width: 393px)  and (max-width: 780px) {
     .containerJogo {
        width: 100%;
-       height: 5%;
+       height: 17%;
        display: flex;
        flex-direction: column;
     }
 
     .coluna1 {
        width: 100%;
-       height: 100vh;
+       height: 90%;
+       margin-top: 20%;
+
        justify-content: center;
        align-items: center;
        background-color: #131212;   
@@ -68,6 +70,6 @@
 
     .post img {
       object-fit: contain;
-      margin-top: -12%;
+      margin-top: -25%;
     }
  }
