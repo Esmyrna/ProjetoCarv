@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[116],{745:function(a,e,l){var n=l(67);a.exports=(n.default||n).template({compiler:[8,">= 4.3.0"],main:function(a,e,l,n,s){return'<div class="ads-block">\n    <label class="ads-block__title">ADS</label>\n</div>'},useData:!0})}}]);
+//# sourceMappingURL=116.bf1d37511f13b57d8ea0a59d18512b2f.js.map

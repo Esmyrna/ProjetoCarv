@@ -1,0 +1,215 @@
+#header-box-mobile {
+    visibility: hidden;
+  }
+  
+
+
+  
+#wrapperVideo {
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  top: -50em;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 50px;
+}
+
+
+/*Video de fundo*/
+#videoCarvalheira {
+  min-width: 100vw;
+  min-height: 120vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.videoBody {
+  opacity: 0.4;
+}
+
+#containerIconsVideo {
+  margin-top: 8em;
+  margin-left: 5em;
+}
+
+
+/*Icones*/
+#iconV {
+  height: 40px;
+  width: 40px;
+  background-color: #460273;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconV:hover{
+  opacity: 0.4;
+}
+
+#iconV svg {
+  color: #fff;
+  width: 100%;
+}
+
+  
+
+/*Container Infomações*/
+
+#containerGeralVideo {
+  padding: 0% 2%;
+  width: 40%;
+  min-width: 400px;
+  background: none;
+  margin-top: -15em;
+  margin-left: 9em;
+}
+
+#containerGeralVideo p {
+
+
+  max-width: 400px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  background: none;
+  margin-left: 0.4em;
+}
+
+/*H1 container*/
+#headerBox {
+
+  width: 80%;
+  height: 10vh;
+  background: none;
+
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  min-width: 480px;
+  max-width: 700px;
+}
+
+#headerBox h1 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: auto;
+  background: none;
+  margin-right: 4em;
+}
+
+#ingressoBtnVideo {
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  background-color: #D9298A;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: .85rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+
+}
+
+#ingressoBtnVideo:hover {
+  opacity: 0.8;
+}
+
+
+@media only screen and (max-width: 770px) {
+    /*TESTANDO APENAS*/
+   
+    #iconV svg {
+      color: #fff;
+      width: 20px;
+      height: 20px;
+    }
+
+    #videoCarvalheira {
+      min-width: 70vw;
+      min-height: 70vh;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      
+    
+    }
+
+    #containerGeralVideo {
+    padding: 0% 2%;
+    width: 50%;
+    min-width: 400px;
+    background: none;
+    margin-left: 11em;
+    margin-top: -220px;
+  }
+  
+  #containerGeralVideo p {
+  
+  
+    max-width: 370px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: none;
+    margin-left: 0.4em;
+  }
+
+  #headerBox {
+
+    width: 80%;
+    height: 10vh;
+  
+  
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    min-width: 480px;
+    max-width: 700px;
+
+  }
+
+  #headerBox h1{
+    font-size: 3.0rem;
+    margin-left: -110px;
+  }
+
+ 
+  #ingressoBtnVideo {
+    cursor: pointer;
+    height: 4rem;
+    width: 12rem;
+    border: none;
+    background-color: #D9298A;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  
+  }
+  
+}
+
+/*Comentário teste*/
+
+@media only screen and (max-width: 500px) {
+
+#containerGeralVideo p {
+  max-width: 350px;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  background: none;
+  margin-left: 0.4em;
+}
+}
+

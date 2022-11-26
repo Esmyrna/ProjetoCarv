@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../../FontesCarv/Manrope/Manrope-Bold.ttf');
+}
+
+.containerSobre{
+   width: 100vw;
+   height: 950px;
+   display: flex;
+   
+}
+
+.about {
+  
+    display: flex;
+    flex-direction: column;
+    margin-top: 23rem;
+    height: 500px;
+   
+}
+
+#pink{
+    color: #D9298A
+}
+
+.txtAbout {
+ 
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Manrope-Regular';
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+    margin-right: 3rem;
+    margin-left: 3rem;
+ 
+}
+
+.imgAbout{
+    position: relative;
+    left: 60px;
+    top: 350px;
+    padding-top: 20px;
+}
+
+.v1 {
+    position: relative;
+    top: -67.5rem;
+    right: 9.7rem;
+    z-index: 5;
+ 
+}
+
+.v2 {
+     position: relative;
+     top: -52rem;
+     right: 10rem;
+  
+}
+
+.v3 {
+    position: relative;
+    top: -35rem;
+    right: 12rem;
+    z-index: 3;
+      
+}
+
+.v4 {
+    position: relative;
+    top: -14rem;
+    right: 250px;
+    animation: pisca 1.5s infinite;
+}
+
+/*Aplicar isso em todas as paginas*/
+::selection{
+    color: #FFF;
+    background: #D9298A;
+}
+
+@keyframes pisca {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+#btnTxt{
+    display: block;
+  
+    width: 200px;
+    height: 60px;
+    background: #D9298A;
+    position: relative;
+    top: 10px;
+    border: 2px solid #D9298A;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0px 15px pink;
+    cursor: pointer;
+   
+}
+a {
+    font-family: 'Manrope-Bold';
+    text-decoration: none;
+    color: white;
+}
+
+#btnTxt:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px){
+
+.imgAbout{
+    display:none;
+}
+.about {
+  
+    display: flex;
+    flex-direction: column;
+    margin-top: 55rem;
+    height: 500px;
+   
+}
+
+#btnTxt{
+    display: block;
+  
+    width: 180px;
+    height: 50px;
+    background: #D9298A;
+    position: relative;
+    top: 10px;
+    border: 2px solid #D9298A;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0px 15px pink;
+    cursor: pointer;
+   
+}
+
+}

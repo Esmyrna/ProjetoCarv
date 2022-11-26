@@ -1,0 +1,105 @@
+class SsmAudience{constructor(){this.fsga="I"
+this.fsga_sg=""
+this.statuses=window.ssmStore.get('statuses',[])
+this.subStatuses=window.ssmStore.get('subStatuses',[])
+this.debug=document.location.href.indexOf('localhost')!==-1||document.location.href.indexOf('testaudience')!==-1
+this.controlLastSession(7)
+if(typeof window.ssmCustomTargetings==='undefined'){window.ssmCustomTargetings={}}
+this.eventsLength=window.dataLayer.length
+if(window.ssmStore.get('pageView')===1){window.ssmStore.setPersistent('sessions',window.ssmStore.get('sessions',0)+1);window.ssmStore.setPersistent('lastSession',Date.now());}
+window.ssmStore.setPersistent('pageViewTotal',window.ssmStore.get('pageViewTotal',0)+1);this.interCount=null
+this.initial()
+this.runBeforeClose()
+this.watchNavigate()
+this.watchDataLayer()}
+setStatuses(status,substatus){let change=false
+if(!this.ssmInArray(this.statuses,status)){this.statuses.push(status)
+change=true}
+this.fsga=status
+if(substatus){if(!this.ssmInArray(this.subStatuses,substatus)){this.subStatuses.push(substatus)
+change=true}
+this.fsga_sg=substatus}
+if(change){this.log('set',status,substatus)
+this.getFinalGroup()}}
+getFinalGroup(){if(!this.statuses.length){return}
+this.statuses.sort()
+this.subStatuses.sort()
+this.fsga=this.statuses[this.statuses.length-1]
+this.fsga_sg=this.subStatuses[this.subStatuses.length-1]
+window.ssmStore.setPersistent('fsga',this.fsga)
+window.ssmStore.setPersistent('fsga_sg',this.fsga_sg)
+window.ssmStore.setPersistent('statuses',this.statuses.filter(this.ssmOnlyUnique))
+window.ssmStore.setPersistent('subStatuses',this.subStatuses.filter(this.ssmOnlyUnique))
+this.log('FSGA',this.fsga)
+this.log('FSGA_SG',this.fsga_sg)
+window.ssmCustomTargetings.ssmaudiencegroup=this.fsga
+window.ssmCustomTargetings.ssmaudiencesubgroup=this.fsga_sg}
+initial(){this.setLogged()
+let ssmUniqueHist=JSON.parse(sessionStorage.getItem('navigation-history/history'))
+ssmUniqueHist=ssmUniqueHist?ssmUniqueHist.filter(this.ssmOnlyUnique):[]
+if(ssmUniqueHist.length>=30){this.setStatuses('A','A3')}else if(window.ssmStore.get('pageView')>10||this.ssmInArray(this.subStatuses,'A2')){this.setStatuses('A','A2');}else if(window.ssmStore.get('sessions')>=3){this.setStatuses('A','A1');}
+let ssmSearchs=window.ssmStore.get('searchs',[])
+if(sessionStorage.getItem('filters/apply-url-search')&&sessionStorage.getItem('filters/apply-url-search').indexOf('query=')!==-1){let ssmSearchParams=new URLSearchParams(sessionStorage.getItem('filters/apply-url-search'))
+this.log('search',ssmSearchParams.get('query'))
+if(!this.ssmInArray(ssmSearchs,ssmSearchParams.get('query'))){ssmSearchs.push(ssmSearchParams.get('query'))
+window.ssmStore.setSession('searchs',ssmSearchs)}}
+if(ssmSearchs.length>=5){this.setStatuses('B','B1');}
+this.setDownload()
+if(window.ssmStore.get('microfunnel')&&window.ssmStore.get('microfunnel')<=3){this.setStatuses('F','F2')}else if(window.ssmStore.get('microfunnel')>3){this.setStatuses('G','G1')}
+if(localStorage.getItem('billing-plan')==='monthly'){this.setStatuses('G','G2')
+this.setStatuses('G','G2.1')}else if(localStorage.getItem('billing-plan')==='annua'){this.setStatuses('G','G2')
+this.setStatuses('G','G2.2')}
+this.getFinalGroup()}
+initialize(){sessionStorage.setItem('ssm',JSON.stringify({}))
+localStorage.setItem('ssm',JSON.stringify({}))
+window.ssmStore.persistentData={}
+window.ssmStore.sessionData={}
+window.ssmStore.setSession('pageView',1);}
+controlLastSession(limitDaysPassed){let lastSession=window.ssmStore.get('lastSession',false);if(lastSession){lastSession=new Date(lastSession)
+const diffDays=this.getDiffInDays(lastSession)
+if(diffDays>=limitDaysPassed){this.initialize()}}}
+getDiffInDays(customDate,controlDay=false){if(!controlDay){controlDay=Date.now()}
+const diffTime=Math.abs(customDate-controlDay);return Math.floor(diffTime/(1000*60*60*24));}
+watchDataLayer(){this.interCount=setInterval(()=>{this.searchDataLayer()},1000)}
+runBeforeClose(){window.onbeforeunload=()=>{clearInterval(this.interCount)
+this.log('Run before')
+this.searchDataLayer()}}
+searchDataLayer(){let freeDown=window.ssmStore.get('freeDown',[]);let preDown=window.ssmStore.get('preDown',[]);if(window.dataLayer.length<=this.eventsLength){return;}
+this.eventsLength=window.dataLayer.length
+window.dataLayer.forEach((item)=>{if(item.event==='modalItem'&&item.itemType&&item.itemType.indexOf('free')!==-1){this.setStatuses('B','B2')
+if(item.catN1==='photo'){this.setStatuses('B','B2.2')}else if(item.catN1==='vector'){this.setStatuses('B','B2.1')}else if(item.catN1==='psd'){this.setStatuses('B','B2.3')}}else if(item.event==='modalItem'&&item.itemType&&item.itemType.indexOf('premium')!==-1){this.setStatuses('E','E4')
+if(item.catN1==='photo'){this.setStatuses('E','E4.2')}else if(item.catN1==='vector'){this.setStatuses('E','E4.1')}else if(item.catN1==='psd'){this.setStatuses('E','E4.3')}}else if(item.custom_parameter==='filter_name'&&item.event_name==='filter_selection'&&item.filter_category==='license'&&item.filter_selected_value==='premium'){this.setStatuses('F','F1')}else if(item.event_name==='microfunnel'&&item.event==='ga4event'&&item.interaction_type==='click'){window.ssmStore.setPersistent('microfunnel',window.ssmStore.get('microfunnel',0)+1)}else if(item.checkout_version==='single-step'&&item.page_type==='new_checkout'&&item.event==='ga4event'){this.setStatuses('G')}else if(item.checkout_version==='single-step'&&item.ecommerce&&item.ecommerce.items.length&&item.ecommerce.items[0].item_category3==='Month'){this.setStatuses('G','G2')
+this.setStatuses('G','G2.1')}else if(item.checkout_version==='single-step'&&item.ecommerce&&item.ecommerce.items.length&&item.ecommerce.items[0].item_category3==='Year'){this.setStatuses('G','G2')
+this.setStatuses('G','G2.2')}else if(item.event==='gtm.click'&&item["gtm.elementClasses"]&&item["gtm.elementClasses"].indexOf('button--favorite')!==-1&&item['gtm.element'].parentNode.parentNode.dataset){if(item['gtm.element'].parentNode.parentNode.dataset.typology&&item['gtm.element'].parentNode.parentNode.dataset.typology.indexOf('premium')!==-1){this.setStatuses('F','F3')}else{this.setStatuses('D','D1')}}else if(item.event==='ga4event'&&item.event_name==='add_to_collection'){this.setStatuses('D','D2')}else if(item.event==='ga4event'&&item.event_name==='collection_follow'){this.setStatuses('D','D3')}else if(item.event==='ga4event'&&item.action_name==='follow'&&item.event_name==='author_page'){this.setStatuses('D','D4')}else if(item.action==='detail'&&item.category==='follow-contributor'&&item.event==='old_event'){this.setStatuses('D','D4')}else if(item.event==='gtm.linkClick'&&item["gtm.elementUrl"]&&(item["gtm.elementUrl"].indexOf('storyset.com')!==-1||item["gtm.elementUrl"].indexOf('swepik.com')!==-1)){this.setStatuses('D','D5')}else if(item.event==='gtm.click'&&item.elementId&&item.item.elementId.indexOf('filter-')!==-1&&(item["gtm.element"]&&item["gtm.element"].nodeName==='INPUT')){this.setStatuses('D','D6')}else if(item.event==='gtm.click'&&item.elementId&&item.elementId.indexOf('filter-edit_online-1')!==-1){this.setStatuses('D','D6')
+this.setStatuses('D','D6.1')}else if(item.event==='ga4event'&&item.event_name==='tooltip_edit'){this.setStatuses('D','D7')}else if(item.event==='modalItemDownload'&&item.itemType&&item.itemType.indexOf('free')!==-1){if(!this.ssmInArray(freeDown,item.resourceId)){freeDown.push(item.resourceId)
+if(freeDown.length<=5){this.setStatuses('C','C3.1')}
+window.ssmStore.setPersistent('freeDown',freeDown);}
+window.ssmStore.setPersistent('lastDownload',Date.now())
+if(preDown.length+freeDown.length<=5){this.setStatuses('C','C3')}}else if(item.event==='modalItemDownload'&&item.itemType.indexOf('premium')!==-1){if(!this.ssmInArray(preDown,item.resourceId)){preDown.push(item.resourceId)
+if(preDown.length<=5){this.setStatuses('C','C3.2')}
+window.ssmStore.setPersistent('preDown',preDown);}
+window.ssmStore.setPersistent('lastDownload',Date.now())
+if(preDown.length+freeDown.length<=5){this.setStatuses('C','C3')}}})}
+watchNavigate(){const navigatedUrls={[window.location.href]:true};document.addEventListener('navigateAudience',async(event)=>{this.log(event.detail.url)
+if(navigatedUrls[event.detail.url]){}
+navigatedUrls[event.detail.url]=true;window.ssmStore.setPersistent('pageViewTotal',window.ssmStore.get('pageViewTotal',0)+1);window.ssmStore.setSession('pageView',window.ssmStore.get('pageView',0)+1);})}
+setDownload(){const lastDown=window.ssmStore.get('lastDownload',false);if(lastDown){const diffInDays=this.getDiffInDays(lastDown)
+if(diffInDays<=2){this.setStatuses("C",'C1')}}
+if(parseInt(localStorage.getItem('downloads/consumed'))>parseInt(localStorage.getItem('downloads/limit'))){let today=new Date()
+let dateShow=new Date(today.getFullYear(),today.getMonth()+1,today.getDate(),0,0,0,0)
+let downLimitView=window.ssmStore.get('downLimitView',[])
+if(!this.ssmInArray(downLimitView,dateShow.getTime())){downLimitView.push(dateShow.getTime())}
+window.ssmStore.setPersistent('downLimitView',downLimitView)}
+if(window.ssmStore.get('downLimitView',[]).length===1){this.setStatuses("C",'C2')}else if(window.ssmStore.get('downLimitView',[]).length>1){this.setStatuses("E",'E2')}}
+async setLogged(){await this.waitForTargetDocument('.gr-auth__email')
+window.ssmStore.setSession('ssmlogin',document.querySelector('.gr-auth__email').textContent.indexOf('@')!==-1?1:0)
+if(window.ssmStore.get('ssmlogin')){window.ssmCustomTargetings.ssmlogin=window.ssmStore.get('ssmlogin')}}
+waitForTargetDocument(selector){if(!window.IntersectionObserver){return Promise.resolve();}
+return new Promise((resolve,reject)=>{let el=document.querySelector(selector);if(el){resolve(el);}
+new MutationObserver((mutationRecords,observer)=>{if(document.querySelector(selector)){resolve();}}).observe(document.documentElement,{childList:true,subtree:true});});}
+ssmInArray(array,value){var i;for(i=0;i<array.length;i++){if(array[i]===value)return true;}
+return false;}
+ssmOnlyUnique(value,index,self){return self.indexOf(value)===index;}
+log(){if(!this.debug){return;}
+console.log('💡💡💡 audience ',...arguments);}}
+const ssmAudience=new SsmAudience
