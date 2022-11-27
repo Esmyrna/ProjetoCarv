@@ -100,7 +100,7 @@ color: #FFFFFF;
 font-size: 2rem;
 margin: auto;
 background: none;
-margin-right: 4em;
+margin-left: 1px
 }
 /*Botão de Ingresso*/
 #ingressoBtnVideo {
@@ -167,7 +167,7 @@ opacity: 0.8;
 
 #headerBox h1{
   font-size: 3.0rem;
-  margin-left: -110px;
+  margin-left: 1px;
 }
 
 
@@ -200,7 +200,7 @@ margin-left: 0.4em;
 }
 
 #wrapperVideo{
-  top: -44%;
+  top: -50%;
 }
 
 }
