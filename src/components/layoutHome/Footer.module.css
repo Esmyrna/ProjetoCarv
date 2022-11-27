@@ -18,9 +18,6 @@ footer {
  
 
 }
-
-
-
  
 .menu li {
     list-style: none;
@@ -110,6 +107,8 @@ footer {
         display: none;
     }
 
-
+    footer{
+        margin-top: 135px;
+    }
     
 }
