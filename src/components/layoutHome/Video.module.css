@@ -18,7 +18,7 @@
 
 /*Video de fundo*/
 #videoCarvalheira {
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 120vh;
   right: 0;
   bottom: 0;
