@@ -3,7 +3,10 @@
   src: url(../../FontesCarv/Manrope/Manrope-Bold.ttf);
 }
 
-
+.post img{
+  width: 100vw;
+  height: auto;
+}
 
 @media screen and (max-width: 780px) {
     .containerJogo {

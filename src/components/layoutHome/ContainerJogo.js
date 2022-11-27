@@ -133,7 +133,7 @@ function ContainerJogo() {
 
             
             <div className={styles.post}>
-                    <img id="banner"src={Post} alt="Mais de 120 mil pessoas vivem nossa experiência" width="100%" height="500px"/>
+                    <img id="banner"src={Post} alt="Mais de 120 mil pessoas vivem nossa experiência"/>
                </div>
         </section>
     )
