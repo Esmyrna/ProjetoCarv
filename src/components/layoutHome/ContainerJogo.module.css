@@ -2,7 +2,7 @@
   font-family: 'Manrope-Bold';
   src: url(../../FontesCarv/Manrope/Manrope-Bold.ttf);
 }
-
+/*imagem '120 mil'*/
 .post img{
   width: 100vw;
   height: auto;
@@ -11,7 +11,7 @@
 @media screen and (max-width: 780px) {
     .containerJogo {
        width: 100%;
-       height: 17%;
+       height: auto;
        display: flex;
        flex-direction: column;
     }

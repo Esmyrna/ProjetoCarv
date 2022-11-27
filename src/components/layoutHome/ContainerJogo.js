@@ -106,7 +106,7 @@ function ContainerJogo() {
 
     return (
         <section className={styles.containerJogo}>
-                <div className={styles.coluna1}>
+               <div className={styles.coluna1}>
                   <div className={styles.imgSlide}>
                      <p>Próximos <span id={styles.pink}>Eventos</span></p>
                     <img id={styles.imgCartaz} className={styles.item} src={image} width="500" height="600" alt="Imagem do evento escolhido" />
@@ -117,7 +117,7 @@ function ContainerJogo() {
                         <p id={styles.textoSlide}>{text}</p>
                         <a href={ingresso} id={styles.btnSlide}>INGRESSO</a>
                     </div>
-                    </div>
+               </div>
                 <div className={styles.coluna2}>
                  
                         <div className={styles.eventosProximos}>
