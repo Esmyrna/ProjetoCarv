@@ -10,13 +10,6 @@ function Navbar() {
     return (
         <header>
         <nav className={styles.navbar}>
-            <div className={styles.input}>
-            <input type="checkbox" id="check"/>
-            </div>
-           
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
                 <Link to="/">
                     <img id={styles.img}src={logo} alt="Carvalheira" />
                 </Link>
