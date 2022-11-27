@@ -5,8 +5,7 @@ function MelhoresMomentos(){
         <section className={styles.containerMoments}>
 
         <div className={styles.btnMoments}>
-           <button className="arrow-left control" aria-label="Previous image">◀</button>
-           <button className="arrow-right control" aria-label="Previous image">▶</button>
+           
         </div>
         <h1 id={styles.bestMoments}>MELHORES <span id={styles.pink}>MOMENTOS</span> </h1>
         <hr id={styles.line}></hr>
