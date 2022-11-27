@@ -106,3 +106,10 @@
 #pink {
     color: #D9298A;
 }
+
+
+@media screen and (max-width: 780px){
+    .containerFinal{
+        display: none;
+    }
+}

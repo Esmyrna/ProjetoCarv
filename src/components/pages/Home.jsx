@@ -15,13 +15,13 @@ import Final from '../layoutHome/Final'
 function Home() {
    return (
       <Container>
-      <VideoIntro />
-      <ContainerJogo />
-      <SobreCarv />
-      <NumerosCarv />
-      <MelhoresMomentos />
-      <Spotify />
-      <Final />
+         <VideoIntro />
+         <ContainerJogo />
+         <SobreCarv />
+         <NumerosCarv />
+         <MelhoresMomentos />
+         <Spotify />
+         <Final />
           
 
       </Container>

@@ -14,11 +14,7 @@ function SobreCarv() {
 
   return (
     <section className={styles.containerSobre}>
-
- 
-
         <div className={styles.txtAbout}>
-
           <h1>CRIANDO <span id={styles.pink}>MEMÓRIAS...</span></h1>
           <p>Seja nas prévias ou no meio da folia;
             com o pé na areia ou de gravata borboleta; aqui mesmo na Carvalheira ou
