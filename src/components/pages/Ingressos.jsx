@@ -45,7 +45,7 @@ function Ingressos(){
                 </div>
            </div>
     
-           <Footer />
+          
         </section>
 
     ) 
