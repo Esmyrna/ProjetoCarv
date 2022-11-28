@@ -15,8 +15,9 @@
     list-style: none;
     box-sizing: border-box;
 
-
 }
+ 
+
 header{
     margin: 0;
     width: 100vw;
@@ -42,12 +43,22 @@ nav{
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
+    
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .btn:hover{
-    opacity: 0.5
+    opacity: 0.5;
+    color: #fff;
 }
 
+li a {
+    font-family: 'Manrope-Semibold';
+}
 
  
 

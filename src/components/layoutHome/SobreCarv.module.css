@@ -14,6 +14,9 @@
     display: none;
 }
 
+.imgLateral {
+    height: 20%;
+}
 #pink{
     color: #D9298A
 }
@@ -30,9 +33,8 @@
     margin-top: 1rem;
  
 }
-
-.imgAbout{ 
-  
+.txtAbout  h1 {
+    margin: 1rem 0;
 }
 
 .post {
@@ -92,7 +94,8 @@
 }
 #btnTxt{
     display: block;
-  
+    color: #fff;
+    text-decoration: none;
     width: 200px;
     height: 60px;
     background: #D9298A;
@@ -103,9 +106,10 @@
     font-size: 16px;
     box-shadow: 0 0px 15px pink;
     cursor: pointer;
+    margin: 2rem 0;
    
 }
-a {
+#btnTxt a {
     font-family: 'Manrope-Bold';
     text-decoration: none;
     color: white;

@@ -8,6 +8,14 @@ import Ingressos from './components/pages/Ingressos'
 import Container from './components/layoutHome/Container'
 import Navbar from './components/layoutHome/Navbar'
 import Footer from './components/layoutHome/Footer'
+<<<<<<< HEAD
+import ContainerJogo from './components/layoutHome/ContainerJogo'
+import SobreCarv from './components/layoutHome/SobreCarv'
+import MelhoresMomentos from './components/layoutHome/MelhoresMomentos';
+import Ingresso from '../../Carvalheira/src/components/pages/Ingresso'
+
+=======
+>>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
 
 function App() {
   return (
@@ -25,8 +33,18 @@ function App() {
 
       <Route  path="/sobre" element={<Sobre/>}>
       </Route>
+<<<<<<< HEAD
+      <Route  path="/contato" element={<Contato/>}>
+      
+ 
+      </Route>
+
+
+      <Route path="/ingresso" element={<Ingresso/>}>
+=======
 
       <Route  path="/contato" element={<Contato/>}>
+>>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
       </Route>
 
       <Route path="/Ingressos" element={<Ingressos/>}>
