@@ -23,9 +23,9 @@ function MelhoresMomentos(){
 
         </div>
         <div className={styles.years}>
-           <div id={styles.year1}><span id={styles.purple}>20</span>22</div >
-           <div id={styles.year2}><span id={styles.purple}>20</span>21</div >
-           <div id={styles.year3}><span id={styles.purple}>20</span>19</div >
+           <div id={styles.year1}><span id={styles.purple}>20</span>19</div >
+           <div id={styles.year2}><span id={styles.purple}>20</span>20</div >
+           <div id={styles.year3}><span id={styles.purple}>20</span>21</div >
         </div>
 
 

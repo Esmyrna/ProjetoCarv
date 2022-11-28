@@ -4,9 +4,10 @@
 }
 
 footer {
-    margin-top: 135px;
+    
     width: 100vw;
     padding-top: 25px; 
+    background-color: black;
 }
 
 .footer {

@@ -16,6 +16,12 @@ grid-template-columns: auto;
 column-gap: 50px;
 }
 
+<<<<<<< HEAD
+.containerVideo {
+  height: 17%;
+}
+=======
+>>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
 
 /*Video de fundo*/
 #videoCarvalheira {
