@@ -29,7 +29,7 @@ function Ingressos(){
 
             <div classname={styles.responsiveIngressos}>
                 <div className={styles.galleryIngressos}>
-                    <a >
+                    <a>
                         <img className={styles.imgIngressos} src={amore03} alt='' />
                         <div className={styles.descIngressos}>RÉVEILLON AMORÉ 23</div>
                     </a>
@@ -51,7 +51,7 @@ function Ingressos(){
     ) 
 }
 
-export default Ingressos();
+export default Ingressos;
 
 
 

@@ -8,9 +8,7 @@ import Ingressos from './components/pages/Ingressos'
 import Container from './components/layoutHome/Container'
 import Navbar from './components/layoutHome/Navbar'
 import Footer from './components/layoutHome/Footer'
-import ContainerJogo from './components/layoutHome/ContainerJogo'
-import SobreCarv from './components/layoutHome/SobreCarv'
-import MelhoresMomentos from './components/layoutHome/MelhoresMomentos';
+
 function App() {
   return (
     <>
@@ -31,7 +29,7 @@ function App() {
       <Route  path="/contato" element={<Contato/>}>
       </Route>
 
-      <Route path="/ingressos" element={<Ingressos/>}>
+      <Route path="/Ingressos" element={<Ingressos/>}>
       </Route>
 
     </Routes>
