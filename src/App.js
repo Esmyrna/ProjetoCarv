@@ -4,7 +4,7 @@ import Home from './components/pages/Home'
 import Eventos from './components/pages/Eventos'
 import Sobre from './components/pages/Sobre'
 import Contato from './components/pages/Contato'
-
+import Ingressos from './components/pages/Ingressos'
 import Container from './components/layoutHome/Container'
 import Navbar from './components/layoutHome/Navbar'
 import Footer from './components/layoutHome/Footer'
@@ -20,17 +20,20 @@ function App() {
    <Container customClass="min-height">   
       <Routes>
       <Route exact path="/" element={<Home/>}>
-
       </Route>
+
       <Route  path="/eventos" element={<Eventos/>}>
-
       </Route>
+
       <Route  path="/sobre" element={<Sobre/>}>
-        
       </Route>
-      <Route  path="/contato" element={<Contato/>}>
 
+      <Route  path="/contato" element={<Contato/>}>
       </Route>
+
+      <Route path="/ingressos" element={<Ingressos/>}>
+      </Route>
+
     </Routes>
   
     </Container>
