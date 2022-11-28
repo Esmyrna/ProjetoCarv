@@ -16,7 +16,7 @@ function SobreCarv() {
     <>
 
               <div className={styles.post}>
-                    <img id="banner"src={Post} alt="Mais de 120 mil pessoas vivem nossa experiência" width="100%" height="500px"/>
+                    <img id={styles.banner}src={Post} alt="Mais de 120 mil pessoas vivem nossa experiência" width="100%" height="500px"/>
                </div>
     <section className={styles.containerSobre}>
  
@@ -32,11 +32,11 @@ function SobreCarv() {
             Nosso trabalho mesmo é fabricar boas lembranças. Vem, se joga, curta ao máximo
             e sinta como é a experiência Carvalheira!
           </p>
-          <button  id={styles.btnTxt}>
-           <Link to='./sobre'>
-            SAIBA MAIS
+         
+           <Link to='/sobre'>
+           <button  id={styles.btnTxt}> SAIBA MAIS   </button>
             </Link>
-            </button>
+          
             <div className={styles.bannerMobileSobre}>
             <img src={ImagemLateral} alt="imagem" height="550px" width="400px" />
             </div>

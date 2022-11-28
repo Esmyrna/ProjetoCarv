@@ -50,11 +50,14 @@ footer {
     color: #D9298A;
 }
 
- 
+.information  {
+    margin-top: 10px;
+}
  
 
 .information h2 {
     color: #D9298A;
+    margin-top: 5px;
 }
 
  
@@ -109,7 +112,7 @@ footer {
     }
 
     footer{
-        margin-top: 135px;
+        margin-top: 100%;
     }
     
 }

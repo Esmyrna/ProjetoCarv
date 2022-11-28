@@ -9,42 +9,39 @@ function Ingresso(){
 
  
     return(
-        <section>
+        <>  <div>
+        <h1 className={styles.h1Ingressos}>MERGULHE NESSA <span>EXPERIÊNCIA</span></h1>
+    </div>
 
-            <div>
-                <h1 className={styles.h1Ingressos}>MERGULHE NESSA <span>EXPERIÊNCIA</span></h1>
+        <section className={styles.conteudo}>
+
+          
+            <div className={styles.responsiveIngressos}>   
+                    <a>
+                        <img className={styles.imgIngressos1} src={bikini1} alt=''/> 
+                    </a>
+                    <div className={styles.titleIngressos}>BIKINI</div>
+                 
+            </div>
+
+            <div className={styles.responsiveIngressos}>   
+                    <a >
+                        <img className={styles.imgIngressos2} src={amore03} alt='' />
+                    </a>
+                    <div className={styles.titleIngressos}>RÉVEILLON AMORÉ 23 </div>
+                
             </div>
 
             <div className={styles.responsiveIngressos}>
-                <div className={styles.galleryIngressos}>
-                    <a>
-                        <img src={bikini1} alt=''/> 
-                    </a>
-                    <div className={styles.descIngressos}>BIKINI</div>
-                </div>
-            </div>
-
-            <div classname={styles.responsiveIngressos}>
-                <div className={styles.galleryIngressos}>
-                    <a >
-                        <img className={styles.imgIngressos} src={amore03} alt='' />
-                        <div className={styles.descIngressos}>RÉVEILLON AMORÉ 23</div>
-                    </a>
-                </div>
-            </div>
-
-            <div classname={styles.responsiveIngressos}>
-                <div className={styles.galleryIngressos}>
-                    <a>
-                        <img className={styles.imgIngressos} src={ladeira02} alt='' />
-                    </a>
-                    <div className={styles.descIngressos}>CARVALHEIRA NA LADEIRA</div>
-                </div>
+            <a> <img className={styles.imgIngressos3} src={ladeira02} alt='' />   </a>
+            <div className={styles.titleIngressos}>
+                   CARVALHEIRA NA LADEIRA
+                  </div>   
            </div>
 
  
         </section>
-
+        </>
     ) 
 }
 

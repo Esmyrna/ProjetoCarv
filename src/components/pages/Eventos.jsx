@@ -47,7 +47,7 @@ function Eventos(){
                     <p>Viva uma experiênia única no carnaval de olinda! Há cinco anos, o Carvalheira na Ladeira atrai gente de todo o Brasil ao coração da folia de Pernambuco para cinco dias intensos de multiculturalidade, diversão e momentos inesquecíveis.</p>
                 </div>
 
-                <GaleriaSlider />
+                
         </section>
        
     )

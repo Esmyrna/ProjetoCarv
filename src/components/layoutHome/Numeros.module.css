@@ -6,14 +6,9 @@
  
  .containerNumero {
     width: 100%;
-    min-height: 500px;
-<<<<<<< HEAD
-     
+    min-height: 500px; 
+   
  
-  
-=======
-    padding-top: 40px;  
->>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
 }
 
 .numbers {
@@ -91,7 +86,7 @@
    .containerNumero {
      width: 100%;
      height: 3%;
- 
+    padding-top: 50%;
      margin-top: 25%;
 
    }

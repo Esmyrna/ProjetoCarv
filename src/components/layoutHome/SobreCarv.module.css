@@ -10,6 +10,10 @@
    margin-top: 50px;
 }
 
+#banner {
+    width: 100%;
+    height: auto;
+}
 .bannerMobileSobre {
     display: none;
 }

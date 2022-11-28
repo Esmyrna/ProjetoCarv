@@ -1,0 +1,121 @@
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../../FontesCarv/Manrope/Manrope-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../../FontesCarv/Manrope/Manrope-Regular.ttf');
+}
+
+
+
+.conteudo{
+   
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: row;
+ margin: 12rem 0;
+ width: 100%;
+ 
+}
+
+ 
+/*.imgIngressos {
+    width: 70%;
+    border-radius: 100%;
+    box-shadow:   0 0 30px #D9298A;
+
+
+}
+*/
+.responsiveIngressos a {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+ .imgIngressos1 {
+    width: 60%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #D9298A;;
+   
+ }
+ .imgIngressos1:hover {
+    box-shadow: 0 0 30px #D9298A;
+ }
+ .imgIngressos2:hover {
+    box-shadow: 0 0 30px #D9298A;
+ }
+ .imgIngressos3:hover {
+    box-shadow: 0 0 30px #D9298A;
+ }
+
+ .imgIngressos2{
+    width: 57.5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #D9298A;;
+ }
+
+ .imgIngressos3{
+    width: 62.5%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #D9298A;;
+ }
+ .responsiveIngressos {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+   
+   
+}
+.imgIngressos img {
+
+}
+ .titleIngressos {
+    color: rgb(248, 239, 239);
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    display:  flex;
+    justify-content: center;
+    font-family: 'Manrope-Bold';
+    text-align: center;
+ }
+
+ @media screen and (min-width: 500px) and (max-width: 630px) {
+    .imgIngressos1:hover {
+   
+     }
+     .imgIngressos2:hover {
+   
+     }
+     .imgIngressos3:hover {
+   
+     }
+
+     .titleIngressos {
+        color: rgb(248, 239, 239);
+        font-size: 1.4rem;
+        padding: 2rem 0;
+        display:  flex;
+        justify-content: center;
+        font-family: 'Manrope-Bold';
+        text-align: center;
+     }
+ }
