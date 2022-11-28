@@ -31,7 +31,11 @@ function Navbar() {
                     </div>
                     
                         <button className={styles.btn}>
+<<<<<<< HEAD
                         <Link to="/ingresso">INGRESSOS</Link>
+=======
+                        <Link to="/ingressos">INGRESSOS</Link>
+>>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
                         </button>
             </nav>
         </header>

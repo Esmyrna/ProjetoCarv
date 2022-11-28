@@ -7,7 +7,7 @@ function Sobre(){
     return(
         <section className={styles.sobre}>
             <div className={styles.bannerSobre}>
-                <img src={sobreCarv}/>
+                <img src={sobreCarv} alt="" />
             </div>
             <div className={styles.titleSobre}>
                 <h1>Conheça um pouco mais sobre a <br></br>
@@ -27,9 +27,9 @@ function Sobre(){
                
             </div>
             <div className={styles.logoPatrocinadores}>
-                    <img src={patrocinador1} />
-                    <img src={patrocinador2}/>
-                    <img src={patrocinador3}/>
+                    <img src={patrocinador1} alt="" />
+                    <img src={patrocinador2} alt="" />
+                    <img src={patrocinador3} alt="" />
                 </div>
 
         </section>

@@ -16,33 +16,20 @@ grid-template-columns: auto;
 column-gap: 50px;
 }
 
+<<<<<<< HEAD
 .containerVideo {
   height: 17%;
 }
+=======
+>>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
 
 /*Video de fundo*/
 #videoCarvalheira {
-
- 
-  max-width: 100vw;
-   
-  right: 0;
-  bottom: 0;
-  top: 0;
- 
- margin-top: 80px !important;
- width: 100%;
- height: auto;
- min-width: 100vw;
- z-index: -1;
- 
-
 margin-top: 80px !important;
 width: 100%;
 height: auto;
 min-width: 100vw;
 z-index: -1;
-
 }
 
 .videoBody {
@@ -51,7 +38,7 @@ opacity: 0.4;
 
 /*Contém os ícones de rede social*/
 #containerIconsVideo {
- 
+margin-top: 8em;
 margin-left: 5em;
 }
 

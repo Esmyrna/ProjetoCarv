@@ -4,7 +4,7 @@
 }
 .containerMoments {
   width: 100%;
- 
+ padding-top: 20px;
   text-align: center;
 
   font-family: 'Manrope-Bold';
@@ -16,10 +16,17 @@
   align-items: center;
 
   background-image: url('../../imgsFinais/img5.png');
+<<<<<<< HEAD
   background-size: 70%;
   background-position: 190% -40%;
+=======
+  
+
+  background-size: 68.6%;
+  background-position: 200% 98%;
+>>>>>>> 40b92d7738299e208201520c9f839c238d9a528d
   background-repeat: no-repeat;
- 
+  
 }
 
 .containerMoments h1 {
