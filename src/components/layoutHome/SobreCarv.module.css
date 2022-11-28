@@ -7,9 +7,12 @@
    width: 100vw;
    height: 100vh;
    display: flex;
-   
+   margin-top: 50px;
 }
- 
+
+.bannerMobileSobre {
+    display: none;
+}
 
 #pink{
     color: #D9298A
@@ -24,15 +27,19 @@
     text-align: left;
     margin-right: 3rem;
     margin-left: 3rem;
+    margin-top: 1rem;
  
 }
 
-.imgAbout{
-    position: relative;
-    left: 60px;
-    top: 350px;
-    padding-top: 20px;
+.imgAbout{ 
+  
 }
+
+.post {
+    width: 100%;
+    margin-top: 36px;
+}
+
 
 .v1 {
     position: relative;
@@ -90,7 +97,7 @@
     height: 60px;
     background: #D9298A;
     position: relative;
-    top: 10px;
+    top: 40px;
     border: 2px solid #D9298A;
     border-radius: 5px;
     font-size: 16px;
@@ -107,12 +114,6 @@ a {
 #btnTxt:hover{
     opacity: 0.8;
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 770px){
 

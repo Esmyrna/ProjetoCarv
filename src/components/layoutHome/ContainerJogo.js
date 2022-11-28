@@ -107,35 +107,38 @@ function ContainerJogo() {
     return (
         <section className={styles.containerJogo}>
                 <div className={styles.coluna1}>
-                  <div className={styles.imgSlide}>
-                     <p>Próximos <span id={styles.pink}>Eventos</span></p>
+                
+                     <h1>Próximos <span id={styles.pink}>Eventos</span></h1>
                     <img id={styles.imgCartaz} className={styles.item} src={image} width="500" height="600" alt="Imagem do evento escolhido" />
                    
-                    </div>
+               
                     <div id={styles.containerTexto}>
                         <h3 id={styles.textoTitulo}>{title}</h3>
                         <p id={styles.textoSlide}>{text}</p>
-                        <a href={ingresso} id={styles.btnSlide}>INGRESSO</a>
+                       
                     </div>
+                    <a href={ingresso} id={styles.btnSlide}>INGRESSO</a>
                     </div>
+                    
                 <div className={styles.coluna2}>
                  
-                        <div className={styles.eventosProximos}>
+                <div className={styles.eventosProximos}>
                             <h2>PRÓXIMOS <span id={styles.rosa}>   EVENTOS</span></h2>
                         </div>
+                        <div className={styles.imagensGarrafa}>
+                       
                         <img onClick={girarGarrafa} className={styles.bottle} id="bottle" src={garrafa} width="120" alt="Imagem da garrafa" />
                         <img onClick={trocarImg1} id={styles.img1} src={imagem1} width="100" height="100" alt="evento do jogo" />
                         <img onClick={trocarImg2} id={styles.img2} src={imagem2} width="100" height="100" alt="evento do jogo" />
                         <img onClick={trocarImg3} id={styles.img3}src={imagem3} width="100" height="100" alt="evento do jogo" />
                         <img onClick={trocarImg4} id={styles.img4}src={imagem4} width="100" height="100" alt="evento do jogo" />
+                        </div>
                     </div>
            
-
-            
-            <div className={styles.post}>
-                    <img id="banner"src={Post} alt="Mais de 120 mil pessoas vivem nossa experiência" width="100%" height="500px"/>
-               </div>
+                 
+       
         </section>
+        
     )
 }
 
