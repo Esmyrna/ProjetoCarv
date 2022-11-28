@@ -31,7 +31,7 @@ function Navbar() {
                     </div>
                     
                         <button className={styles.btn}>
-                        <Link to="/">INGRESSOS</Link>
+                        <Link to="/ingresso">INGRESSOS</Link>
                         </button>
             </nav>
         </header>

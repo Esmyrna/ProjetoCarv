@@ -8,7 +8,7 @@
   src: url('../../FontesCarv/Manrope/Manrope-Regular.ttf');
 }
 
-
+ 
 .containerJogo {
   width: 100%;
   height: 100vh;
@@ -79,6 +79,8 @@
   align-items: center;
   margin: 1rem 0rem;
   border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
 }
 
 #btnSlide:hover {
@@ -169,7 +171,7 @@
 .bottle {
   position: relative;
   left: 43%;
-  top: 50%;
+  top: 80%;
   bottom: 1rem;
   cursor: pointer;
   transition: all 300ms linear;
