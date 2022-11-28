@@ -54,10 +54,10 @@ function NumerosCarv(){
  
                   <div className={styles.numbers}>
                      <div clasasName={styles.num1}>
-                        <p className={styles.frase1}> <span className={styles.purple} id="count1">{time1} </span> <br></br>Eventos desde 2004</p>
+                        <p className={styles.frase1}> <span className={styles.purple} id="count1">100 </span> <br></br>Eventos desde 2004</p>
                      </div>
                      <div className={styles.frase2}>
-                     <p className={styles.frase2}> <span className={styles.purple} id="count2">{time2}K </span> <br></br>De pessoas na plateia</p>
+                     <p className={styles.frase2}> <span className={styles.purple} id="count2">400K </span> <br></br>De pessoas na plateia</p>
                      </div>
                      <div className={styles.frase3}>
                      <p className={styles.frase3}> <span className={styles.purple} id="count3">200 </span> <br></br>Marcas envolvidas</p>
