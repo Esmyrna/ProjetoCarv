@@ -11,7 +11,7 @@ import Footer from './components/layoutHome/Footer'
 import ContainerJogo from './components/layoutHome/ContainerJogo'
 import SobreCarv from './components/layoutHome/SobreCarv'
 import MelhoresMomentos from './components/layoutHome/MelhoresMomentos';
-import Ingresso from '../../Carvalheira/src/components/pages/Ingresso'
+import Ingresso from './components/pages/Ingresso'
 
  
  
