@@ -10,9 +10,8 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-  
-    
-  
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
   
   .col1 {
@@ -133,7 +132,7 @@
     }
   }
   
-  @media (min-width: 393px) and (max-width: 780px) {
+  @media screen and (max-width: 780px) {
 
     .containerSpotify{
       width: 100%;
@@ -142,6 +141,8 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
+      margin-bottom: 5%;
+      margin-top: 5%;
 
   }
 
@@ -160,7 +161,6 @@
   .col1 p {
     font-size: 6rem;
     text-align: center;
-    
   }
 
   #font {
