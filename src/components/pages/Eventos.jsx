@@ -4,7 +4,7 @@ import logoCarva from '../../imagens/logo_carva.png'
 import logoSaoJoao from '../../imagens/logoSaoJoao.png'
 import logoBikini from '../../imagens/logo_bikini.png'
 import logoMarca from '../../imagens/logo.png'
-import GaleriaSlider from './GaleriaSlider'
+
 
 function Eventos(){
     return(

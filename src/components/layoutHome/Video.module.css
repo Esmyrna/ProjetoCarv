@@ -10,10 +10,11 @@
 #wrapperVideo {
 font-family: 'Manrope', sans-serif;
 position: relative;
-top: -58%;
+top: -88%;
 display: grid;
 grid-template-columns: auto;
 column-gap: 50px;
+
 }
 
 .containerVideo {
@@ -73,6 +74,7 @@ min-width: 400px;
 background: none;
 margin-top: -15em;
 margin-left: 9em;
+
 }
 
 #containerGeralVideo p {
@@ -86,7 +88,6 @@ margin-left: 0.4em;
 
 /*H1 container*/
 #headerBox {
-
 width: 80%;
 height: 10vh;
 background: none;
