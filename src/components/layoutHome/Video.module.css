@@ -16,7 +16,9 @@ grid-template-columns: auto;
 column-gap: 50px;
 }
 
-
+.containerVideo{
+  height: 16%;
+}
 /*Video de fundo*/
 #videoCarvalheira {
 margin-top: 80px !important;
@@ -32,7 +34,7 @@ opacity: 0.4;
 
 /*Contém os ícones de rede social*/
 #containerIconsVideo {
-margin-top: 8em;
+margin-top: -7em;
 margin-left: 5em;
 }
 
@@ -83,9 +85,10 @@ margin-left: 0.4em;
 
 /*H1 container*/
 #headerBox {
-
+display: flex;
+flex-direction: column;
 width: 80%;
-height: 10vh;
+height: 30vh;
 background: none;
 overflow-x: hidden;
 overflow-y: hidden;
@@ -94,6 +97,8 @@ justify-content: center;
 min-width: 480px;
 max-width: 700px;
 }
+
+
 
 #headerBox h1 {
 color: #FFFFFF;
@@ -123,6 +128,11 @@ opacity: 0.8;
 
 
 @media only screen and (max-width: 770px) {
+
+ 
+  .containerVideo {
+    height: 10%;
+  }
   #iconV svg {
     color: #fff;
     width: 20px;
@@ -154,9 +164,10 @@ opacity: 0.8;
 }
 
 #headerBox {
-
-  width: 80%;
-  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 20vh;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
@@ -189,6 +200,16 @@ opacity: 0.8;
 
 
 @media only screen and (min-width: 401px) and (max-width: 760px) {
+
+  #headerBox h1{
+    font-size: 2.0rem;
+    margin-left: 1rem;
+  }
+
+ 
+#containerGeralVideo {
+    padding: 0 3rem;
+  }
 
 #containerGeralVideo p {
 max-width: 350px;

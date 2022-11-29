@@ -6,7 +6,7 @@
 footer {
     
     width: 100vw;
-    padding-top: 25px; 
+    padding-top: 35px; 
     background-color: black;
 }
 
@@ -111,8 +111,6 @@ footer {
         display: none;
     }
 
-    footer{
-        margin-top: 100%;
-    }
+     
     
 }

@@ -135,7 +135,7 @@
 
     .containerSpotify{
       width: 100%;
-      height: 100vh;
+      height: 21%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -145,6 +145,18 @@
 
   }
 
+  .playlist {
+    padding: 5rem 7rem;
+    margin: 0;
+  }
+
+
+  #btnPlay {
+    margin: 1rem 0 1rem;
+    padding: 0;
+    font-size: 2rem;
+  
+  }
   .col1 {
     width: 100%;
     display: flex;
@@ -168,15 +180,18 @@
   }
 
   .col2 {
-    width:100%;
+    width:80%;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 20%;
+    
   }
   #image1 {
     width: 100%;
+    margin-top: -10%;
+    
  
     background: none;
   }
@@ -184,15 +199,17 @@
   #image2 {
     width:100%;
     height: 100%;
-    margin-top: -50%;
+     
+    
     background: none;
   
   }
   
   #image3 {
     width: 100%;
- 
-    background: none;
+    margin-top: 2rem;
+    
   }
+
   
 }

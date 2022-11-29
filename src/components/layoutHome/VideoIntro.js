@@ -5,7 +5,7 @@ import { BsFacebook } from 'react-icons/bs'
 import { BsSpotify } from 'react-icons/bs'
 import { BsYoutube } from 'react-icons/bs'
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom'
 
 function VideoIntro() {
     const  [link, setLink] = useState('')
@@ -47,11 +47,15 @@ function VideoIntro() {
            <div id={styles.containerGeralVideo}>
               <div id={styles.headerBox}>
                  <h1>CREATING MEMORIES</h1>
-              </div>
-              <p>
+                 <p>
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil porro impedit molestiae commodi at autem unde corporis.
               </p>
+              </div>
+            
+              <Link to="/ingresso">
               <button id={styles.ingressoBtnVideo} >INGRESSOS</button>
+              </Link>
+             
            </div>
         </div>
         
