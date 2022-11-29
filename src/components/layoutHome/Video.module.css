@@ -10,10 +10,11 @@
 #wrapperVideo {
 font-family: 'Manrope', sans-serif;
 position: relative;
-top: -58%;
+top: -68%;
 display: grid;
 grid-template-columns: auto;
 column-gap: 50px;
+
 }
 
 .containerVideo{
@@ -72,6 +73,7 @@ min-width: 400px;
 background: none;
 margin-top: -15em;
 margin-left: 9em;
+
 }
 
 #containerGeralVideo p {
@@ -105,7 +107,8 @@ color: #FFFFFF;
 font-size: 2rem;
 margin: auto;
 background: none;
-margin-left: 1px
+margin-left: 1px;
+
 }
 /*Botão de Ingresso*/
 #ingressoBtnVideo {
