@@ -72,13 +72,13 @@ function ContainerJogo() {
           setText("Chegou a vez da gente pagodear forte, esquecer os problemas e ficar 100% nice com as canetadas da @ludmilla. E o pass pra você não perder esse dia por NA-DA está disponível a partir de JÁ.  O comentário é fod@, é o #Numanice na cidade! #AlguémMeBelisca? ")
           setIngresso('https://www.ingresse.com/numanice-recife')
  
-       } else if (number === 3) {
+       } else if (number === 2) {
           setTitle("Carvalheira na ladeira");
           setImage(imagem4);
           setText("No ritmo da vontade de viver esses dias e pra fazer jus à terra dos gigantes.  Com vocês, o line-up do #CarvalheiraNaLadeira2023. E é assim, que a gente pode dizer sem medo de errar, dos dias 18 a 21/02 vamos viver o melhor CARNAVAL da história! ");
           setIngresso('https://www.ingresse.com/carvalheira-na-ladeira-23')
  
-       } else if (number === 2) {
+       } else if (number === 3) {
           setTitle("Bikini");
           setImage(imagem3);
           setText("Tão inseparáveis quanto o mar e a areia e a gente e a resenha, é a abertura da melhor estação + o melhor feriado do ano. E se o verão tá pra brotar a gente já sabe que a previsão é de B!K!N!!!!!! E aí, brotos: partiu #BikiniMemories?")
@@ -91,7 +91,7 @@ function ContainerJogo() {
        number = number + Math.floor(Math.random() * 4); // number recebe número aleatório
  
        while (true) {
-          if (number == random) { // verifica se number é igual a random (sendo que random recebeu o valor de number)
+          if (number === random) { // verifica se number é igual a random (sendo que random recebeu o valor de number)
              number = Math.floor(Math.random() * 4); // se for igual number recebe outro valor e se for diferente ele quebra o laço
           } else {
              break
