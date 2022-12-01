@@ -51,8 +51,8 @@ nav{
     text-decoration: none;
 }
 
-.btn:hover{
-    opacity: 0.5;
+.btn a:hover{
+    box-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A, 0 0 45px #D9298A;
     color: #fff;
 }
 

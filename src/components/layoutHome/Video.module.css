@@ -54,12 +54,16 @@ align-items: center;
 }
 
 #iconV:hover{
-opacity: 0.4;
+ border: 2px solid #fff;
 }
 
 #iconV svg {
-color: #fff;
+color: rgb(255, 255, 255);
 width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+ 
 }
 
 
@@ -90,7 +94,7 @@ margin-left: 0.4em;
 display: flex;
 flex-direction: column;
 width: 80%;
-height: 30vh;
+height: 40vh;
 background: none;
 overflow-x: hidden;
 overflow-y: hidden;
@@ -170,7 +174,7 @@ opacity: 0.8;
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 20vh;
+  height: 25vh;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;

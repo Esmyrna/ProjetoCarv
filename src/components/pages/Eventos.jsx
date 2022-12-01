@@ -4,17 +4,20 @@ import logoCarva from '../../imagens/logo_carva.png'
 import logoSaoJoao from '../../imagens/logoSaoJoao.png'
 import logoBikini from '../../imagens/logo_bikini.png'
 import logoMarca from '../../imagens/logo.png'
+import GaleriaSlider from './GaleriaSlider'
 
 
 function Eventos(){
     return(
       
          <section className={styles.divEventos}>
+           
                 <div className={styles.square}>
                      
                      <ul className={styles.logos}>
                             <li>
                             <img src={logoBaile} alt="" />
+                                
                             </li>
                             <li>
                             <img src={logoBaile} style={styles.img2} alt="" />
@@ -47,7 +50,7 @@ function Eventos(){
                     <p>Viva uma experiênia única no carnaval de olinda! Há cinco anos, o Carvalheira na Ladeira atrai gente de todo o Brasil ao coração da folia de Pernambuco para cinco dias intensos de multiculturalidade, diversão e momentos inesquecíveis.</p>
                 </div>
 
-                
+                <GaleriaSlider />
         </section>
        
     )

@@ -12,34 +12,36 @@ import ContainerJogo from './components/layoutHome/ContainerJogo'
 import SobreCarv from './components/layoutHome/SobreCarv'
 import MelhoresMomentos from './components/layoutHome/MelhoresMomentos';
 import Ingresso from './components/pages/Ingresso'
-
+import ScrollToTop from './components/ScrollToTop';
  
  
 
 function App() {
   return (
     <>
+
       <Router>
         <Navbar />
        
    <Container customClass="min-height">   
+      <ScrollToTop /> 
       <Routes>
 
-      <Route exact path="/" element={<Home/>}>
-      </Route>
+      <Route exact path="/" element={<Home/>} />
+       
 
-      <Route  path="/eventos" element={<Eventos/>}>
-      </Route>
+      <Route  path="/eventos" element={<Eventos/>} />
+       
 
-      <Route  path="/sobre" element={<Sobre/>}>
-      </Route>
+      <Route  path="/sobre" element={<Sobre/>} />
+   
  
-      <Route  path="/contato" element={<Contato/>}>
-      </Route>
+      <Route  path="/contato" element={<Contato/>} />
+      
 
 
-      <Route path="/ingresso" element={<Ingresso/>}>
-      </Route>
+      <Route path="/ingresso" element={<Ingresso/>}/>
+    
  
  
 

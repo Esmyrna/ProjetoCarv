@@ -23,15 +23,6 @@
  
 }
 
- 
-/*.imgIngressos {
-    width: 70%;
-    border-radius: 100%;
-    box-shadow:   0 0 30px #D9298A;
-
-
-}
-*/
 .responsiveIngressos a {
 
     width: 100%;
@@ -47,6 +38,7 @@
     justify-content: center;
     align-items: center;
     border: 6px solid #D9298A;;
+    cursor: pointer;
    
  }
  .imgIngressos1:hover {
@@ -65,7 +57,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 6px solid #D9298A;;
+    border: 6px solid #D9298A;
+    cursor: pointer;
  }
 
  .imgIngressos3{
@@ -74,7 +67,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 6px solid #D9298A;;
+    border: 6px solid #D9298A;
+    cursor: pointer;
  }
  .responsiveIngressos {
     font-size: 1rem;

@@ -3,6 +3,10 @@
     src: url('../../FontesCarv/Manrope/Manrope-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../../FontesCarv/Manrope/Manrope-Regular.ttf');
+  }
 footer {
     
     width: 100vw;
@@ -20,6 +24,9 @@ footer {
 
 }
  
+.footer ul {
+    margin-top: 5px;
+}
 .menu li {
     list-style: none;
 }
@@ -32,7 +39,7 @@ footer {
 
     color: #fff;
     padding: 2em;
-
+    font-family: 'Manrope-Regular';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +68,6 @@ footer {
 }
 
  
- 
 
 .information a {
     color: white;
@@ -73,7 +79,8 @@ footer {
 }
 
 .information a:hover {
-    opacity: 0.3;
+   
+    color: #fff;
 }
 
 .information svg {

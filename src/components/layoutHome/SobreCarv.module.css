@@ -39,6 +39,7 @@
 }
 .txtAbout  h1 {
     margin: 1rem 0;
+    text-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A, 0 0 45px #D9298A;
 }
 
 .post {
@@ -108,9 +109,11 @@
     border: 2px solid #D9298A;
     border-radius: 5px;
     font-size: 16px;
-    box-shadow: 0 0px 15px pink;
     cursor: pointer;
     margin: 2rem 0;
+    font-family: 'Manrope-Bold';
+    text-decoration: none;
+
    
 }
 #btnTxt a {
@@ -120,7 +123,7 @@
 }
 
 #btnTxt:hover{
-    opacity: 0.8;
+    box-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A, 0 0 45px #D9298A;
 }
 
 @media only screen and (max-width: 770px){
