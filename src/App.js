@@ -40,7 +40,7 @@ function App() {
       
 
 
-      <Route path="/ingresso" element={<Ingresso/>} />
+      <Route path="/ingresso" element={<Ingresso/>}/>
     
  
  
