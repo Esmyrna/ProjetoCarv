@@ -50,7 +50,7 @@ function VideoIntro() {
                <div id={styles.headerBox}>
                   <h1>PADRÃO <span id={styles.pink}>CARVALHEIRA</span></h1>
                   <p>
-                  Porque no fim das contas, nosso negócio não é fazer festas. Nosso trabalho mesmo é fabricar boas lembranças.  
+                  Porque no fim das contas, nosso negócio não é fazer festas. Nosso trabalho mesmo é fabricar boas memórias.  
                   </p>
                </div>
 
