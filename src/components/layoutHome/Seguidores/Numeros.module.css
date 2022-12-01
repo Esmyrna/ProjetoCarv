@@ -1,0 +1,161 @@
+ @font-face {
+   font-family: Manrope-bold;
+   src: url(../../../FontesCarv/Manrope/Manrope-Bold.ttf);
+ }
+
+ /* Container números de seguidores */
+
+ .containerNumero {
+   width: 100%;
+   min-height: 500px;
+
+ }
+
+ .contador {
+   display: flex;
+
+
+ }
+
+ .numbers {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-content: center;
+   position: relative;
+   margin-top: 5%;
+ }
+
+ .sobre {
+
+   color: white;
+   z-index: 2;
+   font-size: 25px;
+   font-family: 'Manrope-Bold';
+
+
+ }
+
+ .sobre h1 {
+   margin-top: 5%;
+ }
+
+ #pink {
+   color: #D9298A;
+ }
+
+ #white {
+   color: #ffffff;
+   text-align: center;
+ }
+
+ .purple {
+   color: #AC6CD7;
+   text-align: center;
+   font-size: 97px;
+   margin-bottom: 13%;
+   font-family: Manrope-Regular;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-shadow: 0 0 15px #AC6CD7;
+ }
+
+
+ .frase1 {
+   color: #fff;
+   margin-left: 5%;
+   text-align: center;
+   font-size: 1.8rem;
+   font-family: 'Manrope-Bold';
+
+ }
+
+ .frase2 {
+   color: #fff;
+   margin-left: 5%;
+   text-align: center;
+   font-size: 1.8rem;
+   font-family: 'Manrope-Bold';
+ }
+
+ .frase3 {
+   color: #fff;
+   margin-left: 5%;
+   text-align: center;
+   font-size: 1.8rem;
+   font-family: 'Manrope-Bold';
+ }
+
+ 
+ /* Mobile e tablet */
+
+ @media screen and (max-width: 780px) {
+
+   .containerNumero {
+     width: 100%;
+     height: 3%;
+     padding-top: 60%;
+
+
+   }
+
+   .numbers {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-content: center;
+   }
+
+   .sobre {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: white;
+     z-index: 2;
+     font-size: 2.5rem;
+     font-family: 'Manrope-Bold';
+     margin-bottom: 5%;
+
+
+   }
+
+   .purple {
+     color: #AC6CD7;
+     text-align: center;
+     font-size: 4rem;
+     font-family: Manrope-Regular;
+   }
+
+
+   #pink {
+     color: #D9298A;
+   }
+
+
+   .frase1 {
+     color: #fff;
+
+     text-align: center;
+     font-size: 1.8rem;
+     font-family: 'Manrope-Bold';
+     text-align: center;
+   }
+
+
+   .frase2 {
+     color: #fff;
+     font-size: 1.8rem;
+     font-family: 'Manrope-Bold';
+     text-align: center;
+   }
+
+   .frase3 {
+     color: #fff;
+
+     font-size: 1.8rem;
+     font-family: 'Manrope-Bold';
+     text-align: center;
+   }
+ }

@@ -1,0 +1,37 @@
+
+/*  Slide de fotos para o Container Jogo */
+.slideJogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.CarouselItem h1 {
+    color: #fff;
+}
+
+/* Mobile e Tablet */
+
+@media (min-width: 200px)  and (max-width: 880px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .infoEventos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .imagem   {
+        cursor: pointer;
+    }
+
+
+ }

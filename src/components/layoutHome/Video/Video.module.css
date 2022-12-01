@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url('../../../FontesCarv/Manrope/Manrope-Bold.ttf');
+}
+
+
+/*Contém todos os elementos da seção*/
+
+#wrapperVideo {
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  top: -68%;
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 50px;
+}
+
+.containerVideo {
+  height: 16%;
+}
+
+/*Video de fundo*/
+#videoCarvalheira {
+  margin-top: 80px !important;
+  width: 100%;
+  height: auto;
+  min-width: 100vw;
+  z-index: -1;
+}
+
+.videoBody {
+  opacity: 0.3;
+}
+
+/*Contém os ícones de rede social*/
+#containerIconsVideo {
+  margin-top: -7em;
+  margin-left: 5em;
+}
+
+ 
+/*Icones*/
+#iconV {
+  height: 45px;
+  width: 45px;
+  background-color: #460273;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconV:hover {
+  border: 2px solid #fff;
+}
+
+#iconV svg {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+/*Container Infomações*/
+
+#containerGeralVideo {
+  padding: 0% 2%;
+  width: 40%;
+  min-width: 400px;
+  background: none;
+  margin-top: -15em;
+  margin-left: 9em;
+
+}
+
+#containerGeralVideo p {
+  max-width: 400px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  background: none;
+  margin-left: 0.4em;
+}
+
+/*H1 container*/
+#headerBox {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40vh;
+  background: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  min-width: 480px;
+  max-width: 700px;
+}
+
+#pink {
+  color: #D9298A;
+}
+
+#headerBox h1 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin: 1rem auto;
+  background: none;
+  margin-left: 1px;
+  font-family: 'Manrope-Bold';
+
+}
+
+/*Botão de Ingresso*/
+#ingressoBtnVideo {
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  background-color: #D9298A;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: .85rem;
+  border-radius: 8px;
+  margin-top: 0rem;
+
+}
+
+#ingressoBtnVideo:hover {
+  box-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A, 0 0 45px #D9298A;
+}
+
+
+@media only screen and (max-width: 770px) {
+
+
+  .containerVideo {
+    height: 10%;
+  }
+
+  #iconV svg {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+  }
+
+  #wrapperVideo {
+    top: -45%;
+
+  }
+
+  #containerGeralVideo {
+    padding: 0% 2%;
+    width: 50%;
+    min-width: 400px;
+    background: none;
+    margin-left: 11em;
+    margin-top: -220px;
+  }
+
+  #containerGeralVideo p {
+
+
+    max-width: 370px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: none;
+    margin-left: 0.4em;
+  }
+
+  #headerBox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 25vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    min-width: 480px;
+    max-width: 700px;
+
+  }
+
+  #headerBox h1 {
+    font-size: 3.0rem;
+    margin-left: 1px;
+  }
+
+
+  #ingressoBtnVideo {
+    cursor: pointer;
+    height: 4rem;
+    width: 12rem;
+    border: none;
+    background-color: #D9298A;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+
+  }
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 760px) {
+
+  #headerBox h1 {
+    font-size: 2.0rem;
+    margin-left: 1rem;
+  }
+
+
+  #containerGeralVideo {
+    padding: 0 3rem;
+  }
+
+  #containerGeralVideo p {
+    max-width: 350px;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: none;
+    margin-left: 0.4em;
+  }
+
+  #wrapperVideo {
+    top: -50%;
+  }
+
+}
+
+/* Mobile  e tablet */
+
+@media only screen and (max-width: 400px) {
+  #wrapperVideo {
+    top: -50%;
+  }
+}

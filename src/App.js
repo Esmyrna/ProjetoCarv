@@ -1,17 +1,17 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom'
-import Home from './components/pages/Home'
-import Eventos from './components/pages/Eventos'
-import Sobre from './components/pages/Sobre'
-import Contato from './components/pages/Contato'
+import Home from './pages/Home'
+import Eventos from './pages/Eventos'
+import Sobre from './pages/Sobre'
+import Contato from './pages/Contato'
 import Container from './components/layoutHome/Container'
-import Navbar from './components/layoutHome/Navbar'
-import Footer from './components/layoutHome/Footer'
+import Navbar from './components/layoutHome/Nav/Navbar'
+import Footer from './components/layoutHome/Footer/Footer'
  
-import ContainerJogo from './components/layoutHome/ContainerJogo'
-import SobreCarv from './components/layoutHome/SobreCarv'
-import MelhoresMomentos from './components/layoutHome/MelhoresMomentos';
-import Ingresso from './components/pages/Ingresso'
+import ContainerJogo from './components/layoutHome/Jogo/ContainerJogo'
+import SobreCarv from './components/layoutHome/Sobre/SobreCarv'
+import MelhoresMomentos from './components/layoutHome/Momentos/MelhoresMomentos';
+import Ingresso from './pages/Ingresso'
 import ScrollToTop from './components/ScrollToTop';
  
  

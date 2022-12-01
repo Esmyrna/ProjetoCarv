@@ -3,11 +3,13 @@
     src: url('../../FontesCarv/Manrope/Manrope-Bold.ttf');
 }
 
-h2{
+h2 {
     font-family: 'Manrope', sans-serif;
 }
 
-.containerAll{
+/* Container Contato */
+
+.containerAll {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -15,16 +17,17 @@ h2{
 }
 
 /*Wrapper geral dos elementos*/
-.contatoWrapper{
+
+.contatoWrapper {
     margin: 0%;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-top: 100px;
-   
+
 }
 
 .contatoHeading {
@@ -34,27 +37,25 @@ h2{
     padding-left: 7%;
     font-family: 'Manrope', sans-serif;
 }
-.contatoHeading h1{
+
+.contatoHeading h1 {
     font-size: 2.5rem;
     color: #D9298A;
     margin-bottom: 30px;
-    
+
 }
 
-.contatoHeading span{
+.contatoHeading span {
     color: #D9D9D9;
 }
 
 /*Elementos do formulário (inputs)*/
-.formulario
-{
+
+.formulario {
     background-color: #D9D9D9;
-    padding:10px;
+    padding: 10px;
     border-radius: 20px;
     border-style: none;
-
-    /*Qual a cor que deve ser o texto ao ser digitado?
-    Vou deixar preto por enquanto*/
     font-weight: 600;
     color: #000000;
     display: flex;
@@ -63,34 +64,35 @@ h2{
 }
 
 /*Pseudo elemento necessário para mudar a cor do placeholder!*/
-.formulario::placeholder{
+
+.formulario::placeholder {
     color: #D9298A;
     font-weight: 700;
     opacity: 1;
 }
 
- 
 
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 501px;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     background: none;
-    
-    
-}   
 
-.formulario input{
+
+}
+
+.formulario input {
     width: 100%;
     margin: 1.2%;
     height: 60px;
     font-size: 1.4rem;
 }
 
-.formulario textarea{
+.formulario textarea {
     width: 100%;
     margin: 1.2%;
     height: 15%;
@@ -99,38 +101,37 @@ h2{
     left: 40%;
 }
 
-#msgForm{
+#msgForm {
     height: 150px;
 }
 
-#msgForm::placeholder{
+#msgForm::placeholder {
     position: relative;
     top: -50px;
 }
 
 
-.formulario form{
-    /*temporário, tirar*/
- 
+.formulario form {
+
     width: 40%;
     height: 100%;
-    
-    
-  
 }
-input{
+
+
+input {
     border-radius: 10px;
-     
+
 }
-input::placeholder{
+
+input::placeholder {
     font-family: 'Manrope-Bold';
-    color:#D9298A;
+    color: #D9298A;
     font-size: 16px;
     padding-left: 20px;
 }
 
- 
-.contatoImg{
+
+.contatoImg {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -138,23 +139,20 @@ input::placeholder{
     width: 40%;
     height: auto;
     margin-top: -7%;
-    
+
 }
 
-.contatoImg img{
+.contatoImg img {
     width: 100%;
     height: 350px;
- 
-    
-    
+
+
+
 }
 
-
-
-
-
 /* Botão enviar*/
-.submit{
+
+.submit {
     background-color: #460571;
     border-radius: 10px;
     color: #D9D9D9;
@@ -168,69 +166,68 @@ input::placeholder{
     border: none;
 }
 
-.submit:hover{
+.submit:hover {
     color: #460571;
     background-color: #D9D9D9;
     transition: .2s;
 }
 
+/* Mobile e Tablet */
 
-
-@media(max-width: 768px){
-    html{
+@media(max-width: 768px) {
+    html {
         font-size: 50%;
     }
-    
-    .contatoFormulario{
+
+    .contatoFormulario {
         flex-direction: column;
     }
 
-    .contatoFormulario form{
-        /*temporário, tirar*/
+    .contatoFormulario form {
         margin: 10px 20px 10px 0;
         width: 100%;
         height: 100%;
     }
 
-    .contatoImagem{
+    .contatoImagem {
         display: none;
     }
-    
-    
-    .contatoImg img{
+
+
+    .contatoImg img {
         width: 100%;
         height: 100%;
     }
 
-    .formulario form{
+    .formulario form {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    
-    .contatoImg{
+
+    .contatoImg {
         display: none;
     }
-    
-    .contaienrContato{
+
+    .contaienrContato {
         margin: 0;
     }
 
-    
-
-    .contatoWrapper{
+    .contatoWrapper {
         width: 98%;
         margin-top: 80px;
-        
+
     }
-    .btnForm{
+
+    .btnForm {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
     }
-    .submit{
+
+    .submit {
         font-size: 2rem;
         display: flex;
         justify-content: center;
@@ -238,5 +235,5 @@ input::placeholder{
         width: 100%;
     }
 
-   
+
 }

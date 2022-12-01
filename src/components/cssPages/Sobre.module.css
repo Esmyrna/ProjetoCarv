@@ -3,11 +3,7 @@
     src: url('../../FontesCarv/Manrope/Manrope-Bold.ttf');
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+/* Container Sobre */
 
 .sobre {
     display: flex;

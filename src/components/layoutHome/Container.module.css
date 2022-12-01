@@ -1,3 +1,5 @@
+/* Container Geral */
+
 .container {
     width: 100%;
     display: flex;
@@ -6,6 +8,3 @@
     flex-wrap: wrap;
     background-color: black;
 }
-
- 
- 

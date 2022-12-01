@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../../../FontesCarv/Manrope/Manrope-Bold.ttf');
+}
+
+/*  Container do Sobre  */
+
+.containerSobre {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 50px;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+.bannerMobileSobre {
+    display: none;
+}
+
+.imgLateral {
+    height: 20%;
+}
+
+#pink {
+    color: #D9298A
+}
+
+.txtAbout {
+
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Manrope-Regular';
+    font-size: 25px;
+    opacity: 1;
+    text-align: left;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+
+}
+
+.txtAbout h1 {
+    margin: 1rem 0;
+    text-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A, 0 0 45px #D9298A;
+    font-family: 'Manrope-Bold';
+}
+
+.post {
+    width: 100%;
+    margin-top: 36px;
+}
+
+/*  Vetores de Luzes  */
+.v1 {
+    position: relative;
+    top: -67.5rem;
+    right: 9.7rem;
+    z-index: 5;
+
+}
+
+.v2 {
+    position: relative;
+    top: -52rem;
+    right: 10rem;
+
+}
+
+.v3 {
+    position: relative;
+    top: -35rem;
+    right: 12rem;
+    z-index: 3;
+
+}
+
+.v4 {
+    position: relative;
+    top: -14rem;
+    right: 250px;
+    animation: pisca 1.5s infinite;
+}
+
+
+
+::selection {
+    color: #FFF;
+    background: #D9298A;
+}
+
+@keyframes pisca {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*  Botão do Saiba Mais */
+
+#btnTxt {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    background: #D9298A;
+    position: relative;
+    top: 0px;
+    border: 2px solid #D9298A;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 2rem 0;
+    font-family: 'Manrope-Bold';
+    text-decoration: none;
+
+
+}
+
+#btnTxt a {
+    font-family: 'Manrope-Bold';
+    text-decoration: none;
+    color: white;
+}
+
+#btnTxt:hover {
+    box-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A, 0 0 45px #D9298A;
+}
+
+/* Mobile e tablet  */
+
+@media only screen and (max-width: 770px) {
+
+    .imgAbout {
+        display: none;
+    }
+
+
+    #btnTxt {
+        display: block;
+        margin: 2rem 0;
+        width: 30%;
+        height: 10%;
+        background: #D9298A;
+        border: 2px solid #D9298A;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        box-shadow: 0 0px 15px pink;
+        cursor: pointer;
+    }
+
+    .txtAbout h1 {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    .txtAbout p {
+        font-size: 2rem;
+    }
+
+    .bannerMobileSobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bannerMobileSobre img {
+        object-fit: contain;
+    }
+}
