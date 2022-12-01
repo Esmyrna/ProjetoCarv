@@ -78,4 +78,4 @@ const GaleriaSlider = () => {
     );
 }
 
-export default GaleriaSlider
+export default GaleriaSlider;

@@ -3,6 +3,8 @@
     src: url('../../FontesCarv/Manrope/Manrope-Bold.ttf');
 }
 
+
+/* container do texto criando memórias */
 .containerSobre{
    width: 100vw;
    height: 100vh;

@@ -91,8 +91,8 @@ function ContainerJogo() {
       number = number + Math.floor(Math.random() * 4); // number recebe número aleatório
 
       while (true) {
-         if (number === random) { // verifica se number é igual a random (sendo que random recebeu o valor de number)
-            number = Math.floor(Math.random() * 4); // se for igual number recebe outro valor e se for diferente ele quebra o laço
+         if (number === random) { // verifica se number é igual a random (mas a random recebeu o valor de number)
+            number = Math.floor(Math.random() * 4); // se for igual, number recebe outro valor, e se for diferente, ele quebra o laço.
          } else {
             break
          }
