@@ -1,0 +1,443 @@
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url(../../FontesCarv/Manrope/Manrope-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('../../FontesCarv/Manrope/Manrope-Regular.ttf');
+}
+
+ /* CONTAINER PRÓXIMOS EVENTOS */
+.containerJogo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-family: 'Manrope-Regular';
+}
+
+.coluna1Mobile {
+  display: none;
+}
+
+/* Imagem próximos eventos */
+.coluna1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 1rem 0rem;
+  background-color: #131212;
+  border-radius: 2rem;
+}
+
+.coluna1 img {
+  width: 60%;
+  height: 100%;
+  border-radius: 2rem;
+  padding: 0rem 0;
+  border: 7px solid #D9298A;
+  box-shadow: 0 0 30px #D9298A;
+  
+}
+
+.coluna1 h1 {
+  display: none;
+
+ }
+
+/* descrição do próximo evento */
+ .containerTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#textoTitulo {
+  text-align: center;
+  color: #fff;
+  font-family: 'Manrope-Bold';
+  font-size: 1.8rem;
+  padding: 0.5rem 0 0 ;
+  
+}
+
+#containerTexto p {
+  color: #fff;
+  font-family: 'Manrope-Regular';
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/*Botão ingressos abaixo da descrição do evento */
+
+ #btnSlide {
+  background-color: #D9298A;
+  font-size: 0.8rem;
+  padding: 0.6rem 2rem;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Manrope-Regular';
+}
+
+#btnSlide:hover {
+  box-shadow: 0 0 15px #D9298A;
+}
+
+/* Próximos eventos - jogo da garrafa.*/
+.coluna2 {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.coluna2 h2 {
+  text-shadow: 0 0 15px #D9298A, 0 0 30px #D9298A;
+}
+.eventosProximos {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope-Bold';
+  font-size: 1.5rem;
+  
+}
+#rosa {
+  color: #D9298A;
+}
+
+.imagensGarrafa {
+  margin-top: 50px;
+}
+#img1 {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 8rem;
+  cursor: pointer;
+  border: 4px solid #D9298A;
+}
+
+#img1:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+#img2 {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 18rem;
+  left: 2rem;
+
+  cursor: pointer;
+  border: 4px solid #D9298A;
+}
+
+#img2:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+#img3 {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 4px solid #D9298A;
+  position: relative;
+  right: 7.5rem;
+  top: 0rem;
+}
+
+#img3:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+#img4 {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 4px solid #D9298A;
+  position: relative;
+  top: 7.5rem;
+  right: 5rem;
+}
+
+#img4:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+.bottle {
+  position: relative;
+  left: 43%;
+  top: 100%;
+  bottom: 1rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+@media (min-width: 200px)  and (max-width: 880px) {
+    .containerJogo {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin:  5rem 0;
+      
+    }
+
+    .containerJogo h1 {
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .coluna1Mobile {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 2rem 2rem;
+      margin: 100%  15%;
+      background-color: #131212;
+      border-radius: 2rem;
+      box-shadow: 0 0 15px #D9298A;
+    }
+
+    
+    .coluna1 {
+      display: none;
+    }
+ 
+    #textoTitulo {
+      display: none;
+    }
+    
+    #containerTexto p {
+      display: none;
+    }
+
+    #btnSlide {
+      display: none;
+    }
+ 
+    .coluna2 {
+      display: none;
+    }
+
+ 
+ 
+ }
+
+ @media (min-width: 400px)  and (max-width: 880px) {
+  .coluna1 {
+    display: none
+  }
+  .containerTexto {
+    display: none;
+ }
+
+ }
+
+ @media (min-width: 500px)  and (max-width: 880px) {
+
+   .coluna1 {
+    display: none;
+   }
+   .containerTexto {
+    display: none;
+    
+ }
+
+ }
+
+ @media (min-width: 600px)  and (max-width: 880px) {
+
+.containerJogo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+.coluna1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 1rem 1rem;
+  background-color: #131212;
+  border-radius: 2rem;
+  
+  margin: 3rem 2rem ;
+}
+.coluna2 {
+  display: block;
+  width: 100%;
+  padding: 0 2rem;
+  margin:0;
+}
+
+.containerTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#textoTitulo {
+  text-align: center;
+  color: #fff;
+  font-family: 'Manrope-Bold';
+  font-size: 1.8rem;
+  
+  
+}
+#containerTexto p {
+  color: #fff;
+  font-family: 'Manrope-Regular';
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+ #btnSlide {
+  background-color: #D9298A;
+  font-size: 0.8rem;
+  padding: 0.1rem 2rem;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#btnSlide:hover {
+  box-shadow: 0 0 15px #D9298A;
+}
+
+#img1 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  right: 25%;
+  top: 17rem;
+  cursor: pointer;
+  border: 4px solid #D9298A;
+}
+
+#img1:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+#img2 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 31rem;
+  left: -15%;
+
+  cursor: pointer;
+  border: 4px solid #D9298A;
+}
+
+#img2:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+#img3 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 4px solid #D9298A;
+  position: relative;
+  left: 75%;
+  top:4rem;
+}
+
+#img3:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+#img4 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 4px solid #D9298A;
+  position: relative;
+  top: -8rem;
+  left: 6%;
+}
+
+#img4:hover {
+  box-shadow: 0 0 25px #D9298A;
+}
+
+.bottle {
+  width: 76px;
+  position: relative;
+  top: 14rem;
+  bottom: 2rem;
+  left: 16rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+.eventosProximos h2{
+  color: #fff;
+ 
+  font-family: 'Manrope-Bold';
+  font-size: 3rem;
+  
+}
+ }
+
+ @media (min-width: 603px)  and (max-width: 712px) {
+  .coluna1 {
+    display: none;
+  }
+  #img4 {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 4px solid #D9298A;
+    position: relative;
+    top: -8rem;
+    left:7%;
+  }
+
+  #img3 {
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 4px solid #D9298A;
+    position: relative;
+    top: 3.5rem;
+    left:70%;
+  }
+ }
