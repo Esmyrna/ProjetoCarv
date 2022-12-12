@@ -206,6 +206,9 @@
 /* Mobile */
 
 @media (min-width: 200px) and (max-width: 880px) {
+  .coluna1Mobile{
+    margin-top: 100%
+  }
   .containerJogo {
     width: 100%;
     height: 100vh;
