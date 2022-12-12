@@ -4,7 +4,7 @@ import Container from '../components/layoutHome/Container'
 import VideoIntro from '../components/layoutHome/Video/VideoIntro'
 import ContainerJogo from '../components/layoutHome/Jogo/ContainerJogo'
 import SobreCarv from '../components/layoutHome/Sobre/SobreCarv'
-import NumerosCarv from '../components/layoutHome/Seguidores/NumerosCarv'
+
 import MelhoresMomentos from '../components/layoutHome/Momentos/MelhoresMomentos'
 import Spotify from '../components/layoutHome/Spotify/Spotify'
 import Final from '../components/layoutHome/FinalHome/Final'
@@ -19,12 +19,12 @@ function Home() {
    return (
       <Container>
          <VideoIntro />
-         <ContainerJogo />
-         <SobreCarv />
-         <NumerosCarv />
+         
+          <SobreCarv />
+        
          <MelhoresMomentos />
-         <Spotify />
-         <Final />
+          <Spotify />
+          <Final />      
       </Container>
    )
 }

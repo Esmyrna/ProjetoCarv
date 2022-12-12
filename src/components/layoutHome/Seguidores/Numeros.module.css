@@ -90,18 +90,17 @@
  
  /* Mobile e tablet */
 
- @media screen and (max-width: 780px) {
-
+ @media screen and (min-width: 350px) and (max-width: 780px) {
+ 
    .containerNumero {
      width: 100%;
-     height: 3%;
-     padding-top: 60%;
-
-
+     height: 100px;
+  
    }
 
    .numbers {
      width: 100%;
+     height: 30px;
      display: flex;
      flex-direction: row;
      justify-content: space-around;
@@ -116,7 +115,7 @@
      z-index: 2;
      font-size: 2.5rem;
      font-family: 'Manrope-Bold';
-     margin-bottom: 5%;
+    
 
 
    }
@@ -159,3 +158,6 @@
      text-align: center;
    }
  }
+
+ 
+  

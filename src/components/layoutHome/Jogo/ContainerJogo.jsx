@@ -141,7 +141,8 @@ function ContainerJogo() {
          <div className={styles.coluna2}>
 
             <div className={styles.eventosProximos}>
-               <h2>PRÓXIMOS <span id={styles.rosa}>   EVENTOS</span></h2>
+               <h2>PRÓXIMOS <span id={styles.rosa}>   EVENTOS <br>
+               </br> < span id={styles.textBottle}>Gire a garrafa para escolher um evento aleatoriamente.</span></span></h2>
             </div>
 
             <div className={styles.imagensGarrafa}>

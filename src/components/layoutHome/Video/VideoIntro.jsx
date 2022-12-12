@@ -29,7 +29,7 @@ function VideoIntro() {
 
          <div id={styles.wrapperVideo}>
             <div id={styles.containerIconsVideo}>
-               <div class={styles.instagramIcon} id={styles.iconV}   >
+               <div className={styles.instagramIcon} id={styles.iconV}   >
                   <a target="_blank" href={insta}> <BsInstagram /></a>
                </div>
                <div class={styles.facebookIcon} id={styles.iconV} >
@@ -50,7 +50,7 @@ function VideoIntro() {
                <div id={styles.headerBox}>
                   <h1>PADRÃO <span id={styles.pink}>CARVALHEIRA</span></h1>
                   <p>
-                  Porque no fim das contas, nosso negócio não é fazer festas. Nosso trabalho mesmo é fabricar boas lembranças.  
+                  Porque no fim das contas, nosso negócio não é fazer festas. Nosso trabalho mesmo é fabricar boas memórias.  
                   </p>
                </div>
 

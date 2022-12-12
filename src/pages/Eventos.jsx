@@ -5,7 +5,7 @@ import logoSaoJoao from '../imagens/logoSaoJoao.png'
 import logoBikini from '../imagens/logo_bikini.png'
 import logoMarca from '../imagens/logo.png'
 import GaleriaSlider from './GaleriaSlider'
-
+import ContainerJogo from '../components/layoutHome/Jogo/ContainerJogo'
 
 function Eventos() {
 
@@ -14,6 +14,7 @@ function Eventos() {
     return (
 
         <section className={styles.divEventos}>
+            <ContainerJogo />
             <div className={styles.square}>
                 <ul className={styles.logos}>
                     <li>
@@ -43,7 +44,7 @@ function Eventos() {
                 </ul>
             </div>
 
-            <div className={styles.bannerEventos}>
+            {/* <div className={styles.bannerEventos}>
                 <figure class={styles.baEv}>
                     <img class={styles.logomarca} src={logoMarca} alt="logo do evento" />
                 </figure>
@@ -54,7 +55,7 @@ function Eventos() {
             </div>
             <div className={styles.textEventos}>
                 <p>Viva uma experiênia única no carnaval de olinda! Há cinco anos, o Carvalheira na Ladeira atrai gente de todo o Brasil ao coração da folia de Pernambuco para cinco dias intensos de multiculturalidade, diversão e momentos inesquecíveis.</p>
-            </div>
+            </div> */}
 
             <GaleriaSlider />
         </section>

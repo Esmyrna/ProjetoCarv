@@ -98,6 +98,10 @@ label {
 
 }
 
+.dropdown{
+    display: none;
+}
+
 
 /* Mobile e Tablet */
 
@@ -105,18 +109,48 @@ label {
     .list ul {
         display: flex;
         flex-direction: row;
+        display: none;
     }
-
+    
     nav .list li {
         padding: 0 12px;
     }
-
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
     nav img {
-        width: 80px;
+        width: 100px;
     }
 
     .btn {
         font-size: 10px;
         width: 90px;
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: flex-end;
+        color: #fff;
+        font-size: 2rem;
+        background-color: #111010;
+    }
+   #itemDrop {
+    font-size: 1.4rem;
+
+    color: #D9298A;
+    background-color: #111010;
+   }
+    #links{
+        text-decoration: none;
+        color: #D9298A;
+        font-family: 'Manrope-Semibold';
+    }
+
+    #navDropdown {
+        background-color: #000;
     }
 }

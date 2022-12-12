@@ -1,4 +1,4 @@
-import Post from '../../../imagens/post.png'
+
 import ImagemLateral from '../../../imagens/carva.png'
 import vector1 from '../../../imagens/Vector1.png'
 import vector2 from '../../../imagens/Vector2.png'
@@ -14,9 +14,7 @@ function SobreCarv() {
 
   return (
     <>
-      <div className={styles.post}>
-        <img id={styles.banner} src={Post} alt="Mais de 120 mil pessoas vivem nossa experiência" width="100%" height="500px" />
-      </div>
+    
       <section className={styles.containerSobre}>
 
 
@@ -36,21 +34,21 @@ function SobreCarv() {
             <button id={styles.btnTxt}> SAIBA MAIS   </button>
           </Link>
 
-          <div className={styles.bannerMobileSobre}>
+          {/* <div className={styles.bannerMobileSobre}>
             <img src={ImagemLateral} alt="imagem" height="550px" width="400px" />
-          </div>
+          </div> */}
 
         </div>
 
 
         <div className={styles.imgAbout}>
-          <div className="imgLateral">
+          
             <img src={ImagemLateral} alt="imagem" height="550px" width="400px" />
             <img className={styles.v4} src={vector4} alt="" />
             <img className={styles.v3} src={vector3} alt="" />
             <img className={styles.v2} src={vector2} alt="" />
             <img className={styles.v1} src={vector1} alt="" />
-          </div>
+         
         </div>
 
       </section>

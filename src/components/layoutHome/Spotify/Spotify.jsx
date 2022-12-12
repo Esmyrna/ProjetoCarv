@@ -23,7 +23,7 @@ function Spotify(){
                      <div className={styles.playlist}>
                         <img id={styles.image1}src={logoSpotify} alt="Logo do Spotify" />
                         <img id={styles.image2} src={capaCarvalheira} alt="Capa do Carvalheira"/>
-                        <a id={styles.btnPlay} href={link}>OUÇA NOSSA PLAYLIST   </a>
+                        <a target="_blank" id={styles.btnPlay}   href={link}>OUÇA NOSSA PLAYLIST   </a>
                         <img id={styles.image3} src={qrCode} al="QrCode para o Spotify"/>
                      </div>
                   </div>

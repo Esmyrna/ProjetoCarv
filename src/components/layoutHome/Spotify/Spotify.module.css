@@ -12,8 +12,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 5%;
-  margin-top: 5%;
+ 
 }
 
 /* Coluna1: Texto */
@@ -126,12 +125,139 @@
 }
 
 /* Mobile e tablet */
+@media screen and  (min-width: 350px) and (max-width: 861px) {
+  .containerSpotify {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+ 
+   
+  }
 
-@media screen and (max-width: 780px) {
+  .playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid #D9298A;
+    box-shadow: 0 0 30px #D9298A, 0 0 45px #D9298A, 0 0 10px #ffffff;
+    border-width: 70%;
+    width: 400px;
+    height: 500px;
+  
+  
+  }
+  
+  #font {
+    font-family: 'Monoton';
+    font-size: 8rem;
+    margin-top: 50px;
+    background: none;
+    text-shadow: 0 0 30px #D9298A, 0 0 45px rgb(177, 19, 93);
+    animation: animate 1.5s linear infinite;
+    background: none;
+  }
+  
+  /* Coluna1: Texto */
+  
+  .col1 {
+    width: 50%;
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .col1 p {
+   
+    color: white;
+    text-shadow: -1px 0 #D9298A, 0 1px #D9298A, 1px 0 #D9298A, 0 -1px #D9298A;
+    font-size: 2rem;
+    z-index: 2;
+    background: none;
+    text-align: left;
+    
+  }
+  .col2 {
+ 
+  }
+
+  #image1 {
+    width: 100%;
+    position: relative;
+    top: 2rem;
+    
+    background: none;
+  }
+
+  #image2 {
+    width: 200px;
+    height: 100%;
+    background: none;
+
+  }
+
+  #image3 {
+    width: 100%;
+    margin-top: 2rem;
+
+  }
+
+  #btnPlay {
+    background-color: #D9298A;
+    font-family: 'Manrope-Regular';
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    padding: 13px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+  
+  }
+  
+
+  @media screen and  (min-width: 500px) and (max-width: 861px) {
+    .col2 {
+      margin-top: 10rem;
+      
+    }
+    .playlist {
+      height: 450px;
+    }
+
+    #image1 {
+      position: relative;
+      top: 3em;
+      width: 50%;
+    }
+    #image2 {
+      position: relative;
+      top: -3em;
+     
+    }
+
+    #btnPlay {
+      margin-top: -3rem;
+    }
+  }
+
+
+}
+
+/* @media screen and (max-width: 780px) {
 
   .containerSpotify {
     width: 100%;
-    height: 21%;
+     
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,8 +273,8 @@
 
   #btnPlay {
     margin: 1rem 0 1rem;
-    padding: 0rem 1rem;
-    font-size: 1.8rem;
+    padding: 0 1rem;
+    font-size: 2rem;
 
   }
 
@@ -199,4 +325,4 @@
   }
 
 
-}
+} */

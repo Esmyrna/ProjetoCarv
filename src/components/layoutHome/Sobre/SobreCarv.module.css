@@ -9,13 +9,13 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+   
 }
 
-#banner {
-    width: 100%;
-    height: auto;
-}
 
 .bannerMobileSobre {
     display: none;
@@ -84,7 +84,9 @@
     animation: pisca 1.5s infinite;
 }
 
-
+.imgAbout {
+    height: 70%;
+}
 
 ::selection {
     color: #FFF;
@@ -141,6 +143,15 @@
 
 @media only screen and (max-width: 770px) {
 
+    .containerSobre {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    margin-top: 5%;
+   
+}
+
+
     .imgAbout {
         display: none;
     }
@@ -177,4 +188,51 @@
     .bannerMobileSobre img {
         object-fit: contain;
     }
+}
+@media only screen and (min-width: 770px) and (max-width: 1300px) { 
+    .containerSobre {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        margin-top: 5%;
+       
+    }
+    
+    
+        .imgAbout {
+            display: none;
+        }
+    
+    
+        #btnTxt {
+            display: block;
+            margin: 2rem 0;
+            width: 30%;
+            height: 10%;
+            background: #D9298A;
+            border: 2px solid #D9298A;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            box-shadow: 0 0px 15px pink;
+            cursor: pointer;
+        }
+    
+        .txtAbout h1 {
+            font-size: 3rem;
+            margin: 2rem 0;
+        }
+    
+        .txtAbout p {
+            font-size: 1rem;
+        }
+    
+        .bannerMobileSobre {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .bannerMobileSobre img {
+            object-fit: contain;
+        }
 }

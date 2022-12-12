@@ -22,6 +22,11 @@
     object-fit: cover;
 
 }
+#banner {
+    width: 100%;
+    height: auto;
+}
+
 
 .titleSobre h1 {
     font-family: 'Manrope-Bold';
@@ -41,7 +46,7 @@
     font-family: 'Manrope-Bold';
     font-size: 1.5rem;
     text-align: start;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
 
 }
 
@@ -51,7 +56,7 @@
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
-    padding: 0 2.8rem;
+    
 }
 
 #btnContact {
@@ -62,6 +67,7 @@
     padding: 0.5rem 1rem;
     border-radius: 8px;
     cursor: pointer;
+    margin: 1rem 0;
 
 }
 
